@@ -311,6 +311,12 @@ def main():
             print("  - " + f)
         return 1
     print("\nall assertions hold")
+    if not ok:
+        # An assertion can hold while the block that produced its input exited
+        # non-zero -- a missing optional dependency, a crashed driver.  Without
+        # this line the log reads as a pass and the exit code says otherwise.
+        print("but at least one block above exited non-zero; see the lines "
+              "beginning '--'")
     return 0 if ok else 1
 
 

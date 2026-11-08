@@ -2,3 +2,8 @@
 # only and run with no dependencies at all.
 numpy>=1.24
 duckdb>=0.9
+# fig_ratio.py and fig_grid.py draw the figures, and sql_same_instance.py reads
+# the Parquet copy.  Neither was declared in v1.0, so --no-data exited 1 on a
+# clean machine even though every assertion held.
+matplotlib>=3.7
+pyarrow>=14
