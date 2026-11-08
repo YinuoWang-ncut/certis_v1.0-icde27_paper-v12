@@ -1,0 +1,10 @@
+{
+ "groups": 5410,
+ "rows_per_group": 1024,
+ "rank_probe_ns_per_group": 3851.2,
+ "scan_ns_per_row": 0.2794,
+ "scattered_fetch_ns_per_candidate": 4.81,
+ "probe_in_rows_per_group": 13782.5,
+ "probe_in_rows_total": 74563416.0,
+ "fetch_over_scan": 17.21
+}

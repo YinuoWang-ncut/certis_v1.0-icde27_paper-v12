@@ -1,0 +1,57 @@
+{
+ "backends": {
+  "java c1": {
+   "dp": -0.4,
+   "kappa": 1.723,
+   "kstar": 679.2,
+   "kstar_max": 683,
+   "kstar_min": 180,
+   "n0": -0.2
+  },
+  "java c2": {
+   "dp": -3.9,
+   "kappa": 1.636,
+   "kstar": 648.6,
+   "kstar_max": 649,
+   "kstar_min": 140,
+   "n0": -2.4
+  },
+  "java int": {
+   "dp": -0.1,
+   "kappa": 0.58,
+   "kstar": 228.5,
+   "kstar_max": 283,
+   "kstar_min": 219,
+   "n0": -0.3
+  },
+  "numpy": {
+   "dp": 137.3,
+   "kappa": 0.03,
+   "kstar": -125.3,
+   "kstar_max": -57,
+   "kstar_min": -259,
+   "n0": 4528.6
+  },
+  "pyloop": {
+   "dp": -0.4,
+   "kappa": 0.44,
+   "kstar": 173.6,
+   "kstar_max": 183,
+   "kstar_min": 120,
+   "n0": -0.9
+  },
+  "sqlite": {
+   "dp": 10.9,
+   "kappa": 0.122,
+   "kstar": 37.3,
+   "kstar_max": 60,
+   "kstar_min": 27,
+   "n0": 89.1
+  }
+ },
+ "corpus_point_source": "duel_repeat\\duel_rep.json",
+ "fitted_instance": "F fit",
+ "k_corpus": 99,
+ "k_corpus_paper": 182,
+ "n_corpus": 394
+}

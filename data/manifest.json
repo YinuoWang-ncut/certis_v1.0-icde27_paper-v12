@@ -1,0 +1,218 @@
+[
+ {
+  "path": "data/raw/q2026q3_ccipra_f1.zip",
+  "file": "q2026q3_ccipra_f1.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026q3-practitioner-ptp-edits-ccipra-v322r0-f1.zip",
+  "bytes": 20217524,
+  "sha256": "3c0444950b7ef48e72d8091e6475b8cc7f775a7032f77dbea451f0e73b1ff0d1",
+  "used_by": "exp/degree.py"
+ },
+ {
+  "path": "data/raw/medicare-ncci-2026q3-hospital-ptp-edits-ccioph-v322r0-f1.zip",
+  "file": "medicare-ncci-2026q3-hospital-ptp-edits-ccioph-v322r0-f1.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026q3-hospital-ptp-edits-ccioph-v322r0-f1.zip",
+  "bytes": 13900781,
+  "sha256": "e46364aee887a1c9da3ef9f5440500dd054b0717d3e69de244b190f093b35d93",
+  "used_by": "exp/degree.py"
+ },
+ {
+  "path": "data/raw/q2026q4_ccipra_f1.zip",
+  "file": "q2026q4_ccipra_f1.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026q4-practitioner-ptp-edits-ccipra-v323r0-f1.zip",
+  "bytes": 20238121,
+  "sha256": "40adc15de0b5cf9470f874b4a0183a2edb285783f2c1c3db35ab27e1a0b032e2",
+  "used_by": "exp/degree.py; exp/regime_bc.py; exp/delta.py"
+ },
+ {
+  "path": "data/raw/q2026q4_ccioph_f1.zip",
+  "file": "q2026q4_ccioph_f1.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026-q4-hospital-ptp-edits-ccioph-v323r0-f1.zip",
+  "bytes": 13905034,
+  "sha256": "fdf7651190e17f601e9a7112ea9a3107d078469c3bb49a42a79785afc4e83fe6",
+  "used_by": "exp/degree.py; exp/regime_bc.py; exp/delta.py"
+ },
+ {
+  "path": "data/raw/q2026q3_ccipra_f2.zip",
+  "file": "q2026q3_ccipra_f2.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026q3-practitioner-ptp-edits-ccipra-v322r0-f2.zip",
+  "bytes": 19392363,
+  "sha256": "7f417ad242d87b838104aa8a5203e3158592613277c2f0c56ee6afee871a001a",
+  "used_by": "exp/degree.py"
+ },
+ {
+  "path": "data/raw/medicare-ncci-2026q3-hospital-ptp-edits-ccioph-v322r0-f2.zip",
+  "file": "medicare-ncci-2026q3-hospital-ptp-edits-ccioph-v322r0-f2.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026q3-hospital-ptp-edits-ccioph-v322r0-f2.zip",
+  "bytes": 13851137,
+  "sha256": "27975b80c64d7ed58ee78f7192a10963cb127990a6751c99ceb886a329702642",
+  "used_by": "exp/degree.py"
+ },
+ {
+  "path": "data/raw/q2026q4_ccipra_f2.zip",
+  "file": "q2026q4_ccipra_f2.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026q4-practitioner-ptp-edits-ccipra-v323r0-f2.zip",
+  "bytes": 19186336,
+  "sha256": "e0c916cc5b0bf1b7d1dea454a02f024fa1f8b8c819da0f86f144ab1d6ff5343d",
+  "used_by": "exp/degree.py; exp/regime_bc.py; exp/delta.py"
+ },
+ {
+  "path": "data/raw/q2026q4_ccioph_f2.zip",
+  "file": "q2026q4_ccioph_f2.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026q4-hospital-ptp-edits-ccioph-v323r0-f2.zip",
+  "bytes": 13785334,
+  "sha256": "5f39fb6295824ad7199a10eb97c91d478def1ad1a06052dda4879c25efd7004f",
+  "used_by": "exp/degree.py; exp/regime_bc.py; exp/delta.py"
+ },
+ {
+  "path": "data/raw/q2026q3_ccipra_f3.zip",
+  "file": "q2026q3_ccipra_f3.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026q3-practitioner-ptp-edits-ccipra-v322r0-f3.zip",
+  "bytes": 19712609,
+  "sha256": "af92ca33b6e05a63f3ec6d55e4793d314656b58371be833a330f6095ffc0b94f",
+  "used_by": "exp/degree.py"
+ },
+ {
+  "path": "data/raw/medicare-ncci-2026q3-hospital-ptp-edits-ccioph-v322r0-f3.zip",
+  "file": "medicare-ncci-2026q3-hospital-ptp-edits-ccioph-v322r0-f3.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026q3-hospital-ptp-edits-ccioph-v322r0-f3.zip",
+  "bytes": 13732013,
+  "sha256": "db0500a00eb7fe3cb1f6df5edb6fdb69a4018030299bbb58a25cce0737aeeade",
+  "used_by": "exp/degree.py"
+ },
+ {
+  "path": "data/raw/q2026q4_ccipra_f3.zip",
+  "file": "q2026q4_ccipra_f3.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026q4-practitioner-ptp-edits-ccipra-v323r0-f3.zip",
+  "bytes": 19812296,
+  "sha256": "79024324e5f2ac9666a5183c9b256a79cd217f1c495d0f69d53c2a1b9d98b208",
+  "used_by": "exp/degree.py; exp/regime_bc.py; exp/delta.py"
+ },
+ {
+  "path": "data/raw/q2026q4_ccioph_f3.zip",
+  "file": "q2026q4_ccioph_f3.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026q4-hospital-ptp-edits-ccioph-v323r0-f3.zip",
+  "bytes": 13776497,
+  "sha256": "e323c7c723c9a8ba67e01e6c82f695e2e605877f1404b4d9a02e133c16b685a9",
+  "used_by": "exp/degree.py; exp/regime_bc.py; exp/delta.py"
+ },
+ {
+  "path": "data/raw/q2026q3_ccipra_f4.zip",
+  "file": "q2026q3_ccipra_f4.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026q3-practitioner-ptp-edits-ccipra-v322r0-f4.zip",
+  "bytes": 17614070,
+  "sha256": "0743892646c8422c5b5a433630cd35afa9a2e4023ff95ca7f11176c808eb4c57",
+  "used_by": "exp/degree.py"
+ },
+ {
+  "path": "data/raw/medicare-ncci-2026q3-hospital-ptp-edits-ccioph-v322r0-f4.zip",
+  "file": "medicare-ncci-2026q3-hospital-ptp-edits-ccioph-v322r0-f4.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026q3-hospital-ptp-edits-ccioph-v322r0-f4.zip",
+  "bytes": 12871866,
+  "sha256": "d19255cb10edbb4858aeb69515180706e3e1485a90fb3ed076f332c57917ba2e",
+  "used_by": "exp/degree.py"
+ },
+ {
+  "path": "data/raw/q2026q4_ccipra_f4.zip",
+  "file": "q2026q4_ccipra_f4.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026q4-practitioner-ptp-edits-ccipra-v323r0-f4.zip",
+  "bytes": 17884951,
+  "sha256": "028a6d91e27ab177a70f125db22f3f3e898f66345852e7f5470e2065796ef545",
+  "used_by": "exp/degree.py; exp/regime_bc.py; exp/delta.py"
+ },
+ {
+  "path": "data/raw/q2026q4_ccioph_f4.zip",
+  "file": "q2026q4_ccioph_f4.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026q4-hospital-ptp-edits-ccioph-v323r0-f4.zip",
+  "bytes": 12964356,
+  "sha256": "0e731c4c0f5a2150d1c7d9fced946f2ac06421a538b7a78fc093bf17eb64912b",
+  "used_by": "exp/degree.py; exp/regime_bc.py; exp/delta.py"
+ },
+ {
+  "path": "data/raw/q3_pra_delta.zip",
+  "file": "q3_pra_delta.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026q3-practitioner-quarterly-additions-deletions-revisions-ptp.zip",
+  "bytes": 70709,
+  "sha256": "da5d60d7ca9853a75e9c4189326cb1dd0f188ad006686399c0e715573312933b",
+  "used_by": "exp/delta.py"
+ },
+ {
+  "path": "data/raw/q3_hosp_delta.zip",
+  "file": "q3_hosp_delta.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026q3-hospital-quarterly-additions-deletions-revisions-ptp.zip",
+  "bytes": 70064,
+  "sha256": "ebeb00b91ef4402dad5f1c4efef47ef2a9da684f54a3417cc906600f3bde8a9f",
+  "used_by": "exp/delta.py"
+ },
+ {
+  "path": "data/raw/q4_pra_delta.zip",
+  "file": "q4_pra_delta.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026q4-practitioner-quarterly-additions-deletions-revisions-ptp.zip",
+  "bytes": 91030,
+  "sha256": "fd9d7fac88ddbf766c5a45d489225abbf2117dd9398d15258bbf6aee3e3f2ed9",
+  "used_by": "exp/delta.py"
+ },
+ {
+  "path": "data/raw/q4_hosp_delta.zip",
+  "file": "q4_hosp_delta.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026q4-hospital-quarterly-additions-deletions-revisions-ptp.zip",
+  "bytes": 88787,
+  "sha256": "f950750d821b68ea2a796e3a78868a5c56003bbb37e75e6602680f083a7b9a55",
+  "used_by": "exp/delta.py"
+ },
+ {
+  "path": "data/mue/mue_2025q1_pra.zip",
+  "file": "mue_2025q1_pra.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2025q1-practitioner-services-mue-table.zip",
+  "bytes": 395151,
+  "sha256": "074e9cfe492ca47275bca567e167f898db4dcb39ddee18591695f54438962502",
+  "used_by": "exp/regime_bc.py; exp/delta.py; exp/cheap.py"
+ },
+ {
+  "path": "data/mue/mue_2025q4_pra.zip",
+  "file": "mue_2025q4_pra.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2025-q4-practitioner-services-mue-table.zip",
+  "bytes": 400625,
+  "sha256": "1d293e6c1f19cc47169464816de8614302988f6693f54cd12ba26302f845f0b7",
+  "used_by": "exp/regime_bc.py; exp/delta.py; exp/cheap.py"
+ },
+ {
+  "path": "data/mue/mue_2026q1_pra.zip",
+  "file": "mue_2026q1_pra.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026-q1-practitioner-services-mue-table.zip",
+  "bytes": 403260,
+  "sha256": "e8d68e1fd9838db169771e9621e89f5cf2f781e9f562eed9e2af10ec8a3a4ccf",
+  "used_by": "exp/regime_bc.py; exp/delta.py; exp/cheap.py"
+ },
+ {
+  "path": "data/mue/mue_2026q2_pra.zip",
+  "file": "mue_2026q2_pra.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026-q2-practitioner-services-mue-table.zip",
+  "bytes": 404835,
+  "sha256": "76a94f1fe345ade25d0ccca8f83db9813236316d158097e03308d1e35f5e3011",
+  "used_by": "exp/regime_bc.py; exp/delta.py; exp/cheap.py"
+ },
+ {
+  "path": "data/mue/mue_2026q3_pra.zip",
+  "file": "mue_2026q3_pra.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026-q3-practitioner-services-mue-table.zip",
+  "bytes": 405262,
+  "sha256": "8b288fb8ba11c81cf8e4c47f8437d1a4919e9beca60d131fa660d5b6afd1f744",
+  "used_by": "exp/regime_bc.py; exp/delta.py; exp/cheap.py"
+ },
+ {
+  "path": "data/mue/mue_2026q4_pra.zip",
+  "file": "mue_2026q4_pra.zip",
+  "url": "https://www.cms.gov/files/zip/medicare-ncci-2026-q4-practitioner-services-mue-table.zip",
+  "bytes": 407831,
+  "sha256": "4574336755ba4e49b7c8ec07de5b74d3f0b8593e3e6192013631724981180d00",
+  "used_by": "exp/regime_bc.py; exp/delta.py; exp/cheap.py"
+ },
+ {
+  "path": "data/mue/mue_2026q4_pra_delta.zip",
+  "file": "mue_2026q4_pra_delta.zip",
+  "url": "https://www.cms.gov/files/zip/practitioner-services-mue-quarterly-additions-deletions-revisions-10012026.zip",
+  "bytes": 17607,
+  "sha256": "b8679f74e71e1f0315afa336e875b7864acb0fe422c4352884063e197069f888",
+  "used_by": "exp/delta.py"
+ }
+]

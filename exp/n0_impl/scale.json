@@ -1,0 +1,38 @@
+{
+ "note": "numpy backend, scope 65536, same predicate, 16x table, corrected instrument (predicate and band construction fixed -- see module docstring).  One run per size here; the medians the paper quotes are in scale_reps.json, 50 processes per cell.",
+ "rows": [
+  {
+   "N": 1048576,
+   "bytes_per_col": 9437184,
+   "c_R": 0.257,
+   "c_B": 7.547,
+   "F_R": 3256.2,
+   "F_B": 3963.1,
+   "kappa": 0.034,
+   "n0": 2752.8,
+   "pass_B_4096": 1665
+  },
+  {
+   "N": 4194304,
+   "bytes_per_col": 37748736,
+   "c_R": 0.261,
+   "c_B": 7.838,
+   "F_R": 3291.2,
+   "F_B": 4006.9,
+   "kappa": 0.0333,
+   "n0": 2742.6,
+   "pass_B_4096": 1677
+  },
+  {
+   "N": 16777216,
+   "bytes_per_col": 150994944,
+   "c_R": 0.272,
+   "c_B": 10.052,
+   "F_R": 3394.4,
+   "F_B": 4098.5,
+   "kappa": 0.027,
+   "n0": 2591.7,
+   "pass_B_4096": 1615
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "n": 394,
+ "k": 182,
+ "rows": [
+  {
+   "accounting": "array",
+   "a_s": 2.87,
+   "a_p": 8.72,
+   "a_d": 0.0,
+   "c_R": 2.87,
+   "n0": 269.0,
+   "Q_ns": 3051.0,
+   "D_ns": 3823.0,
+   "n0_eff": 1332.1,
+   "kappa": 0.3291,
+   "Delta_p": 438.4,
+   "budget_kappa_n": 129.7,
+   "needed_k_plus_Dp": 620.4,
+   "band_wins": false,
+   "a_d_needed_ns": 20.19,
+   "a_d_over_a_p": 2.31
+  },
+  {
+   "accounting": "CERTIS",
+   "a_s": 1.45,
+   "a_p": 15.750000000000002,
+   "a_d": 9.85,
+   "c_R": 11.3,
+   "n0": 451.0,
+   "Q_ns": 3000.0,
+   "D_ns": 8096.3,
+   "n0_eff": 716.5,
+   "kappa": 0.4414,
+   "Delta_p": 316.3,
+   "budget_kappa_n": 173.9,
+   "needed_k_plus_Dp": 498.3,
+   "band_wins": false,
+   "a_d_needed_ns": 49.02,
+   "a_d_over_a_p": 3.11
+  }
+ ]
+}

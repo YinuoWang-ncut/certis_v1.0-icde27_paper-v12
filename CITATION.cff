@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this artifact, cite the paper it belongs to; the software entry is here so the exact version is citable."
+title: "certis: artifact for When Does Band Retrieval Pay? Scope, Density, and a Measured Floor for Retroactive Rule Evaluation"
+abstract: >-
+  Scripts, stored runs and assertion file behind every number in the paper. reproduce.py
+  re-derives the values that do not need the corpus and compares them against expected.json;
+  the corpus-dependent steps fetch 27 published CMS release files and verify their SHA-256.
+authors:
+  - family-names: Wang
+    given-names: Yinuo
+    orcid: "https://orcid.org/0009-0002-2268-1663"
+    affiliation: "Brunel London School, North China University of Technology"
+version: v1.0-icde27
+date-released: "2026-11-06"
+license: MIT
+type: software
+repository-code: "https://github.com/YinuoWang-ncut/certis_v1.0-icde27_paper-v12"
+url: "https://github.com/YinuoWang-ncut/certis_v1.0-icde27_paper-v12"
+keywords:
+  - temporal databases
+  - incremental view maintenance
+  - rule engines
+  - retroactive correction
+  - reproducibility

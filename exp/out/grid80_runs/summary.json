@@ -1,0 +1,106 @@
+{
+ "grid80_reps5_a.json": {
+  "reps": 5,
+  "agree": 48,
+  "agree_tie": 17,
+  "tie_cells": 35,
+  "agree_off": 31,
+  "off_cells": 45,
+  "false_admissions": 0,
+  "false_refusals": 14
+ },
+ "grid80_reps9.json": {
+  "reps": 9,
+  "agree": 47,
+  "agree_tie": 15,
+  "tie_cells": 31,
+  "agree_off": 32,
+  "off_cells": 49,
+  "false_admissions": 0,
+  "false_refusals": 17
+ },
+ "grid80_reps13.json": {
+  "reps": 13,
+  "agree": 49,
+  "agree_tie": 21,
+  "tie_cells": 38,
+  "agree_off": 28,
+  "off_cells": 42,
+  "false_admissions": 0,
+  "false_refusals": 14
+ },
+ "grid80_reps5_b.json": {
+  "reps": 5,
+  "agree": 49,
+  "agree_tie": 20,
+  "tie_cells": 34,
+  "agree_off": 29,
+  "off_cells": 46,
+  "false_admissions": 0,
+  "false_refusals": 17
+ },
+ "grid80_reps5_c.json": {
+  "reps": 5,
+  "agree": 50,
+  "agree_tie": 22,
+  "tie_cells": 36,
+  "agree_off": 28,
+  "off_cells": 44,
+  "false_admissions": 0,
+  "false_refusals": 16
+ },
+ "grid80_reps25_a.json": {
+  "reps": 25,
+  "agree": 49,
+  "agree_tie": 19,
+  "tie_cells": 34,
+  "agree_off": 30,
+  "off_cells": 46,
+  "false_admissions": 0,
+  "false_refusals": 16
+ },
+ "grid80_reps25_b.json": {
+  "reps": 25,
+  "agree": 48,
+  "agree_tie": 17,
+  "tie_cells": 34,
+  "agree_off": 31,
+  "off_cells": 46,
+  "false_admissions": 0,
+  "false_refusals": 15
+ },
+ "grid80_reps25_c.json": {
+  "reps": 25,
+  "agree": 49,
+  "agree_tie": 22,
+  "tie_cells": 36,
+  "agree_off": 27,
+  "off_cells": 44,
+  "false_admissions": 0,
+  "false_refusals": 17
+ },
+ "grid80_reps25_d.json": {
+  "reps": 25,
+  "agree": 50,
+  "agree_tie": 22,
+  "tie_cells": 36,
+  "agree_off": 28,
+  "off_cells": 44,
+  "false_admissions": 0,
+  "false_refusals": 16
+ },
+ "_ranges": {
+  "agree_all": [
+   47,
+   50
+  ],
+  "agree_at_reps25": [
+   48,
+   50
+  ],
+  "runs": 9,
+  "false_admissions_max": 0,
+  "note": "Nine runs of exp/grid80.py made after the cell statistic became the median of paired per-repetition ratios. The agreement count moves because several cells sit within a few percent of break-even; what does not move is false_admissions, which is zero in all nine. A tenth run at reps=3 made before that statistic change is excluded: it used a ratio of medians, which is a different estimate.",
+  "paper_claim": "Sect. V-E prints 47--50 of 80 across nine stored runs, 48--50 at the 25-repetition protocol, and zero false admissions in every run."
+ }
+}

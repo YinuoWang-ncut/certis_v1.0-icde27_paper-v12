@@ -1,0 +1,65 @@
+{
+ "host": {
+  "name": "stay",
+  "tag": "box2-r1",
+  "platform": "Windows-11-10.0.22631-SP0",
+  "machine": "AMD64",
+  "cpu": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+  "python": "3.13.14",
+  "numpy": "2.4.4",
+  "affinity": -1,
+  "reps": 10
+ },
+ "instance": {
+  "rows": 2000000,
+  "groups": 5410,
+  "seed": 20261105,
+  "scope_rows": 436,
+  "scope_code": 4007,
+  "unit_dtype": "int16"
+ },
+ "P0": {
+  "n": 436,
+  "k": 70,
+  "path_R": {
+   "p50": 22.9,
+   "p95": 24.885,
+   "mean": 21.53,
+   "sd": 4.315,
+   "min": 9.4,
+   "max": 26.5,
+   "n": 20
+  },
+  "path_B": {
+   "p50": 31.75,
+   "p95": 59.265,
+   "mean": 46.345,
+   "sd": 61.262,
+   "min": 18.0,
+   "max": 305.6,
+   "n": 20
+  },
+  "ratio_over_R": 1.386,
+  "cold": {
+   "path_R": {
+    "p50": 17.8,
+    "p95": 39.855,
+    "mean": 26.692,
+    "sd": 39.157,
+    "min": 8.3,
+    "max": 262.1,
+    "n": 40
+   },
+   "path_B": {
+    "p50": 25.0,
+    "p95": 44.05,
+    "mean": 25.783,
+    "sd": 10.74,
+    "min": 9.7,
+    "max": 59.5,
+    "n": 40
+   },
+   "scopes": 40
+  }
+ }
+}

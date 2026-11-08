@@ -1,0 +1,85 @@
+{
+ "instance": {
+  "rows": 2000000,
+  "groups": 5410,
+  "scope_rows": 436,
+  "theta": 99797,
+  "multipliers": [
+   1.01,
+   1.02,
+   1.1,
+   1.5,
+   2.0
+  ],
+  "reps_per_point": 30
+ },
+ "runs": 3,
+ "corrections_per_run": 150,
+ "medians": {
+  "dd_deliver_p50_us": 137.2,
+  "dd_deliver_mean_us": 151.9,
+  "dd_certify_p50_us": 153.4,
+  "dd_certify_mean_us": 175.2,
+  "dd_floor_p50_us": 9.3,
+  "dd_floor_mean_us": 10.9,
+  "hand_deliver_ns": 25,
+  "hand_certify_ns": 9,
+  "hand_scope_recompute_ns": 184,
+  "hand_full_scan_ms": 1.68,
+  "dd_rebuild_ms": 1486
+ },
+ "vs_duckdb": {
+  "denom_us": 18282.0,
+  "rebuild": 81.3,
+  "deliver": 0.0075,
+  "certify": 0.0084,
+  "floor": 0.00051
+ },
+ "v8_retired": {
+  "duckdb_full_ms": 18.282,
+  "path_r_corpus_us": 19.2,
+  "ratio": 952
+ },
+ "ratios": {
+  "deliver_over_retired": 133.3,
+  "rebuild_over_deliver": 10830,
+  "certify_over_deliver": 1.118,
+  "deliver_over_pathR": 7.15,
+  "certify_over_pathR": 7.99,
+  "floor_over_pathR": 0.48,
+  "hand_scope_over_pathR": 0.0096,
+  "hand_deliver_over_pathR": 0.0013,
+  "hand_certify_over_pathR": 0.0005,
+  "rebuild_over_pathR": 77392,
+  "certify_over_summary_031us": 495,
+  "hand_certify_over_deliver": 0.36
+ },
+ "per_k_deliver_us": {
+  "0": {
+   "n": 45,
+   "mean": 177.4,
+   "p50": 158.5
+  },
+  "2": {
+   "n": 45,
+   "mean": 134.4,
+   "p50": 108.7
+  },
+  "20": {
+   "n": 45,
+   "mean": 152.3,
+   "p50": 140.5
+  },
+  "52": {
+   "n": 45,
+   "mean": 184.5,
+   "p50": 170.2
+  },
+  "69": {
+   "n": 45,
+   "mean": 166.0,
+   "p50": 152.3
+  }
+ },
+ "source": "exp/ivm_h2h/src/main.rs (differential-dataflow 0.21.2/timely 0.28, Rust 1.99.1, one worker); exp/ivm_h2h/mkdata.py regenerates the instance from exp/ivm.py's seed"
+}

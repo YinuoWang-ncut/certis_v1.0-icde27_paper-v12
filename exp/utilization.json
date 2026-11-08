@@ -1,0 +1,1103 @@
+{
+ "source": {
+  "provider_service": "mup_phy_2024_prov_svc.csv",
+  "geo": "mup_phy_2024_geo.csv",
+  "rows_read": 9781673,
+  "mue_releases": [
+   "2025q1",
+   "2025q4",
+   "2026q1",
+   "2026q2",
+   "2026q3",
+   "2026q4"
+  ]
+ },
+ "coverage": {
+  "move_codes": 29,
+  "codes_with_observation": 18,
+  "missing_codes": [
+   "0211U",
+   "0313U",
+   "0560T",
+   "77387",
+   "90381",
+   "G0146",
+   "J0911",
+   "J1628",
+   "J1931",
+   "J2267",
+   "J2326"
+  ],
+  "observed_groups": 34569,
+  "observed_lines_lb": 2491954,
+  "observed_units": 125318271,
+  "mue_codes_all": 12121,
+  "mue_codes_matched_geo": 8917,
+  "geo_codes": 9403
+ },
+ "volume": {
+  "n_c_p25": 3431,
+  "n_c_p50": 56912,
+  "n_c_p75": 765969,
+  "n_c_max": 74842821,
+  "mu_p10": 1.0,
+  "mu_p50": 38.1207,
+  "mu_p90": 111.4286,
+  "mu_ge_2": 0.6027,
+  "mu_eq_1": 0.2809
+ },
+ "moves": {
+  "total": 116,
+  "up": 98,
+  "down": 18,
+  "tally": {
+   "unobserved": 45,
+   "undecided": 35,
+   "necessarily_empty": 13,
+   "inside_on_the_mean": 23
+  }
+ },
+ "up_tally": {
+  "necessarily_empty": 13,
+  "undecided": 27,
+  "unobserved": 35,
+  "inside_on_the_mean": 23
+ },
+ "verdicts": [
+  {
+   "code": "0211U",
+   "q": "2025q4",
+   "from": 2,
+   "to": 1,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "0313U",
+   "q": "2025q4",
+   "from": 2,
+   "to": 1,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "0640T",
+   "q": "2025q4",
+   "from": 2,
+   "to": 1,
+   "groups": 61,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "21085",
+   "q": "2025q4",
+   "from": 1,
+   "to": 2,
+   "groups": 38,
+   "verdict": "necessarily_empty",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "88346",
+   "q": "2025q4",
+   "from": 2,
+   "to": 3,
+   "groups": 710,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "90381",
+   "q": "2025q4",
+   "from": 1,
+   "to": 2,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "G0022",
+   "q": "2025q4",
+   "from": 3,
+   "to": 4,
+   "groups": 14,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 1,
+   "groups_over": 9
+  },
+  {
+   "code": "G0024",
+   "q": "2025q4",
+   "from": 1,
+   "to": 4,
+   "groups": 14,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 5,
+   "groups_over": 7
+  },
+  {
+   "code": "G0146",
+   "q": "2025q4",
+   "from": 1,
+   "to": 4,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "G0465",
+   "q": "2025q4",
+   "from": 1,
+   "to": 2,
+   "groups": 1,
+   "verdict": "necessarily_empty",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "J0585",
+   "q": "2025q4",
+   "from": 600,
+   "to": 800,
+   "groups": 3723,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "J0911",
+   "q": "2025q4",
+   "from": 50,
+   "to": 60,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "J1010",
+   "q": "2025q4",
+   "from": 120,
+   "to": 160,
+   "groups": 16352,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 178,
+   "groups_over": 224
+  },
+  {
+   "code": "J1628",
+   "q": "2025q4",
+   "from": 100,
+   "to": 200,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "J2267",
+   "q": "2025q4",
+   "from": 300,
+   "to": 900,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "J3300",
+   "q": "2025q4",
+   "from": 40,
+   "to": 80,
+   "groups": 122,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 6,
+   "groups_over": 9
+  },
+  {
+   "code": "J9358",
+   "q": "2025q4",
+   "from": 900,
+   "to": 1000,
+   "groups": 6,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "0211U",
+   "q": "2026q1",
+   "from": 2,
+   "to": 1,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "0313U",
+   "q": "2026q1",
+   "from": 2,
+   "to": 1,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "0640T",
+   "q": "2026q1",
+   "from": 2,
+   "to": 1,
+   "groups": 61,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "21085",
+   "q": "2026q1",
+   "from": 1,
+   "to": 2,
+   "groups": 38,
+   "verdict": "necessarily_empty",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "64772",
+   "q": "2026q1",
+   "from": 2,
+   "to": 6,
+   "groups": 91,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "88346",
+   "q": "2026q1",
+   "from": 2,
+   "to": 3,
+   "groups": 710,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "90381",
+   "q": "2026q1",
+   "from": 1,
+   "to": 2,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "G0022",
+   "q": "2026q1",
+   "from": 3,
+   "to": 4,
+   "groups": 14,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 1,
+   "groups_over": 9
+  },
+  {
+   "code": "G0024",
+   "q": "2026q1",
+   "from": 1,
+   "to": 4,
+   "groups": 14,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 5,
+   "groups_over": 7
+  },
+  {
+   "code": "G0146",
+   "q": "2026q1",
+   "from": 1,
+   "to": 4,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "G0465",
+   "q": "2026q1",
+   "from": 1,
+   "to": 2,
+   "groups": 1,
+   "verdict": "necessarily_empty",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "J0585",
+   "q": "2026q1",
+   "from": 600,
+   "to": 800,
+   "groups": 3723,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "J0911",
+   "q": "2026q1",
+   "from": 50,
+   "to": 60,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "J1010",
+   "q": "2026q1",
+   "from": 120,
+   "to": 160,
+   "groups": 16352,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 178,
+   "groups_over": 224
+  },
+  {
+   "code": "J1628",
+   "q": "2026q1",
+   "from": 100,
+   "to": 200,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "J1931",
+   "q": "2026q1",
+   "from": 377,
+   "to": 609,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "J2267",
+   "q": "2026q1",
+   "from": 300,
+   "to": 900,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "J3300",
+   "q": "2026q1",
+   "from": 40,
+   "to": 80,
+   "groups": 122,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 6,
+   "groups_over": 9
+  },
+  {
+   "code": "J9358",
+   "q": "2026q1",
+   "from": 900,
+   "to": 1000,
+   "groups": 6,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "0211U",
+   "q": "2026q2",
+   "from": 2,
+   "to": 1,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "0313U",
+   "q": "2026q2",
+   "from": 2,
+   "to": 1,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "0560T",
+   "q": "2026q2",
+   "from": 1,
+   "to": 5,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "0562T",
+   "q": "2026q2",
+   "from": 1,
+   "to": 2,
+   "groups": 3,
+   "verdict": "necessarily_empty",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "0640T",
+   "q": "2026q2",
+   "from": 2,
+   "to": 1,
+   "groups": 61,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "21085",
+   "q": "2026q2",
+   "from": 1,
+   "to": 2,
+   "groups": 38,
+   "verdict": "necessarily_empty",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "64772",
+   "q": "2026q2",
+   "from": 2,
+   "to": 6,
+   "groups": 91,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "88346",
+   "q": "2026q2",
+   "from": 2,
+   "to": 3,
+   "groups": 710,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "90381",
+   "q": "2026q2",
+   "from": 1,
+   "to": 2,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "G0022",
+   "q": "2026q2",
+   "from": 3,
+   "to": 4,
+   "groups": 14,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 1,
+   "groups_over": 9
+  },
+  {
+   "code": "G0024",
+   "q": "2026q2",
+   "from": 1,
+   "to": 4,
+   "groups": 14,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 5,
+   "groups_over": 7
+  },
+  {
+   "code": "G0146",
+   "q": "2026q2",
+   "from": 1,
+   "to": 4,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "G0447",
+   "q": "2026q2",
+   "from": 2,
+   "to": 1,
+   "groups": 3529,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "G0465",
+   "q": "2026q2",
+   "from": 1,
+   "to": 2,
+   "groups": 1,
+   "verdict": "necessarily_empty",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "J0585",
+   "q": "2026q2",
+   "from": 600,
+   "to": 800,
+   "groups": 3723,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "J0589",
+   "q": "2026q2",
+   "from": 250,
+   "to": 300,
+   "groups": 7,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 2,
+   "groups_over": 4
+  },
+  {
+   "code": "J0911",
+   "q": "2026q2",
+   "from": 50,
+   "to": 60,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "J1010",
+   "q": "2026q2",
+   "from": 120,
+   "to": 160,
+   "groups": 16352,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 178,
+   "groups_over": 224
+  },
+  {
+   "code": "J1628",
+   "q": "2026q2",
+   "from": 100,
+   "to": 200,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "J1931",
+   "q": "2026q2",
+   "from": 377,
+   "to": 609,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "J2267",
+   "q": "2026q2",
+   "from": 300,
+   "to": 900,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "J3300",
+   "q": "2026q2",
+   "from": 40,
+   "to": 80,
+   "groups": 122,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 6,
+   "groups_over": 9
+  },
+  {
+   "code": "J7322",
+   "q": "2026q2",
+   "from": 48,
+   "to": 64,
+   "groups": 671,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "J9119",
+   "q": "2026q2",
+   "from": 350,
+   "to": 700,
+   "groups": 16,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "J9358",
+   "q": "2026q2",
+   "from": 900,
+   "to": 1000,
+   "groups": 6,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "0211U",
+   "q": "2026q3",
+   "from": 2,
+   "to": 1,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "0313U",
+   "q": "2026q3",
+   "from": 2,
+   "to": 1,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "0560T",
+   "q": "2026q3",
+   "from": 1,
+   "to": 5,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "0562T",
+   "q": "2026q3",
+   "from": 1,
+   "to": 2,
+   "groups": 3,
+   "verdict": "necessarily_empty",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "0640T",
+   "q": "2026q3",
+   "from": 2,
+   "to": 1,
+   "groups": 61,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "21085",
+   "q": "2026q3",
+   "from": 1,
+   "to": 2,
+   "groups": 38,
+   "verdict": "necessarily_empty",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "64772",
+   "q": "2026q3",
+   "from": 2,
+   "to": 6,
+   "groups": 91,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "77387",
+   "q": "2026q3",
+   "from": 1,
+   "to": 2,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "88346",
+   "q": "2026q3",
+   "from": 2,
+   "to": 3,
+   "groups": 710,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "90381",
+   "q": "2026q3",
+   "from": 1,
+   "to": 2,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "G0022",
+   "q": "2026q3",
+   "from": 3,
+   "to": 4,
+   "groups": 14,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 1,
+   "groups_over": 9
+  },
+  {
+   "code": "G0024",
+   "q": "2026q3",
+   "from": 1,
+   "to": 4,
+   "groups": 14,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 5,
+   "groups_over": 7
+  },
+  {
+   "code": "G0146",
+   "q": "2026q3",
+   "from": 1,
+   "to": 4,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "G0447",
+   "q": "2026q3",
+   "from": 2,
+   "to": 1,
+   "groups": 3529,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "G0465",
+   "q": "2026q3",
+   "from": 1,
+   "to": 2,
+   "groups": 1,
+   "verdict": "necessarily_empty",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "J0585",
+   "q": "2026q3",
+   "from": 600,
+   "to": 800,
+   "groups": 3723,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "J0589",
+   "q": "2026q3",
+   "from": 250,
+   "to": 300,
+   "groups": 7,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 2,
+   "groups_over": 4
+  },
+  {
+   "code": "J0911",
+   "q": "2026q3",
+   "from": 50,
+   "to": 60,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "J1010",
+   "q": "2026q3",
+   "from": 120,
+   "to": 160,
+   "groups": 16352,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 178,
+   "groups_over": 224
+  },
+  {
+   "code": "J1628",
+   "q": "2026q3",
+   "from": 100,
+   "to": 200,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "J1931",
+   "q": "2026q3",
+   "from": 377,
+   "to": 609,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "J2267",
+   "q": "2026q3",
+   "from": 300,
+   "to": 900,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "J3300",
+   "q": "2026q3",
+   "from": 40,
+   "to": 80,
+   "groups": 122,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 6,
+   "groups_over": 9
+  },
+  {
+   "code": "J7322",
+   "q": "2026q3",
+   "from": 48,
+   "to": 64,
+   "groups": 671,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "J9119",
+   "q": "2026q3",
+   "from": 350,
+   "to": 700,
+   "groups": 16,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "J9358",
+   "q": "2026q3",
+   "from": 900,
+   "to": 1000,
+   "groups": 6,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "0211U",
+   "q": "2026q4",
+   "from": 2,
+   "to": 1,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "0313U",
+   "q": "2026q4",
+   "from": 2,
+   "to": 1,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "0560T",
+   "q": "2026q4",
+   "from": 1,
+   "to": 5,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "0562T",
+   "q": "2026q4",
+   "from": 1,
+   "to": 2,
+   "groups": 3,
+   "verdict": "necessarily_empty",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "0640T",
+   "q": "2026q4",
+   "from": 2,
+   "to": 1,
+   "groups": 61,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "21085",
+   "q": "2026q4",
+   "from": 1,
+   "to": 2,
+   "groups": 38,
+   "verdict": "necessarily_empty",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "64772",
+   "q": "2026q4",
+   "from": 2,
+   "to": 6,
+   "groups": 91,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "77387",
+   "q": "2026q4",
+   "from": 1,
+   "to": 2,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "88346",
+   "q": "2026q4",
+   "from": 2,
+   "to": 3,
+   "groups": 710,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "90381",
+   "q": "2026q4",
+   "from": 1,
+   "to": 2,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "96127",
+   "q": "2026q4",
+   "from": 3,
+   "to": 4,
+   "groups": 9200,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "G0022",
+   "q": "2026q4",
+   "from": 3,
+   "to": 4,
+   "groups": 14,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 1,
+   "groups_over": 9
+  },
+  {
+   "code": "G0024",
+   "q": "2026q4",
+   "from": 1,
+   "to": 4,
+   "groups": 14,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 5,
+   "groups_over": 7
+  },
+  {
+   "code": "G0146",
+   "q": "2026q4",
+   "from": 1,
+   "to": 4,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "G0447",
+   "q": "2026q4",
+   "from": 2,
+   "to": 1,
+   "groups": 3529,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "G0465",
+   "q": "2026q4",
+   "from": 1,
+   "to": 2,
+   "groups": 1,
+   "verdict": "necessarily_empty",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "J0585",
+   "q": "2026q4",
+   "from": 600,
+   "to": 800,
+   "groups": 3723,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "J0589",
+   "q": "2026q4",
+   "from": 250,
+   "to": 300,
+   "groups": 7,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 2,
+   "groups_over": 4
+  },
+  {
+   "code": "J0911",
+   "q": "2026q4",
+   "from": 50,
+   "to": 60,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "J1010",
+   "q": "2026q4",
+   "from": 120,
+   "to": 160,
+   "groups": 16352,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 178,
+   "groups_over": 224
+  },
+  {
+   "code": "J1628",
+   "q": "2026q4",
+   "from": 100,
+   "to": 200,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "J1931",
+   "q": "2026q4",
+   "from": 377,
+   "to": 609,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "J2267",
+   "q": "2026q4",
+   "from": 300,
+   "to": 900,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "J2326",
+   "q": "2026q4",
+   "from": 120,
+   "to": 500,
+   "verdict": "unobserved"
+  },
+  {
+   "code": "J3300",
+   "q": "2026q4",
+   "from": 40,
+   "to": 80,
+   "groups": 122,
+   "verdict": "inside_on_the_mean",
+   "groups_inside": 6,
+   "groups_over": 9
+  },
+  {
+   "code": "J7322",
+   "q": "2026q4",
+   "from": 48,
+   "to": 64,
+   "groups": 671,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "J9119",
+   "q": "2026q4",
+   "from": 350,
+   "to": 700,
+   "groups": 16,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "J9358",
+   "q": "2026q4",
+   "from": 900,
+   "to": 1000,
+   "groups": 6,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  },
+  {
+   "code": "J9380",
+   "q": "2026q4",
+   "from": 612,
+   "to": 918,
+   "groups": 11,
+   "verdict": "undecided",
+   "groups_inside": 0,
+   "groups_over": 0
+  }
+ ],
+ "summary": {
+  "cells_bound": 747587,
+  "cells_lower_bound": 8932,
+  "codes_with_volume": 8917,
+  "sum_cap_all": 748758,
+  "column_bytes_4B": 14216963136,
+  "exact_array_bytes": 1495174,
+  "counting_bloom_bytes": 3582832,
+  "array_over_column": 0.000105
+ }
+}

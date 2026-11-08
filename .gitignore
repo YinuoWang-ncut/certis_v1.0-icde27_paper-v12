@@ -1,0 +1,41 @@
+# caches / scratch
+__pycache__/
+*.pyc
+*.class
+*.log
+_out*.txt
+
+# virtualenvs
+.venv/
+venv/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# regeneratable benchmark scratch (built by exp/n0_holdout scripts)
+# the _v/_m/_c/_g arrays are written on every run to hand the store to
+# the Java side; they are never inputs, and 38 MB of them used to ship
+*.npy
+*.db
+*.sqlite
+
+# downloaded corpora -- data/fetch.py rebuilds these, ~250 MB..3.3 GB
+data/raw/
+data/mue/
+data/cms/
+
+# runtime scratch the entry point rewrites on every run
+exp/out/_*.json
+
+# LaTeX build scratch
+_t*.txt
+build*.txt
+_nums_*.json
+_preview/
+*.aux
+*.out
+*.synctex.gz
+
+# reproduce.py scratch: a gate run must not touch a curated record
+exp/out/_*

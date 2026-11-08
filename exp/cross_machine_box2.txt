@@ -1,0 +1,12 @@
+box2-summary.txt  |  artifact v1.0-icde28-r5  |  2026-11-07
+OS        Windows 11 Home China, build 22631, 64-bit (Windows-11-10.0.22631-SP0) | CPU       AMD Ryzen 5 8640U w/ Radeon 760M Graphics | cores     6 physical / 12 logical | memory    15.27 GB | power     AC / mains (battery present, BatteryStatus 2) | host      stay | python    3.13.14   numpy 2.4.4
+reproduce.py --no-data : exit 0, 221 lines, last line "all assertions hold"
+                        11/11 witnesses passed, 0 MISMATCH, 0 assertion failure
+cross_machine.py --quick x3  B/R : r1 1.386 | r2 1.373 | r3 1.353
+median B/R = 1.373   (paper 1.44; normal band 1.2-1.8)
+R p50 us : 22.90 / 15.15 / 16.45   median 16.45
+B p50 us : 31.75 / 20.80 / 22.25   median 22.25
+cold B/R : 1.404 / 1.496 / 1.429   median 1.429
+record block : scan_ns_per_row 0.2794 | fetch_over_scan 17.21 | kappa 0.0696
+verdict : PASS - deterministic assertions reproduce on a second host; B/R within band
+note : first run R=22.90 us is elevated as warned in manual 06; median of three used

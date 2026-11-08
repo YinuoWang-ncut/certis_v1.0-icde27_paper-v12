@@ -1,0 +1,1347 @@
+{
+ "reps": 21,
+ "sweep_reps": 7,
+ "cap": [
+  4,
+  2
+ ],
+ "ref_us": 2765.550001640804,
+ "ref_cv": 0.08626866381709762,
+ "quiet_band": [
+  0.9255625980072354,
+  1.0707314476575247
+ ],
+ "aux_cap": 3,
+ "days_per_group": 58,
+ "override_p": 0.18,
+ "tuple": "eq.(12) with kappa 0.2142, dp 198.8 as printed in Table V",
+ "cells": 12,
+ "rows": [
+  {
+   "tag": "p5",
+   "n": 197,
+   "k": 8,
+   "dens": 0.04060913705583756,
+   "tR": 33.39999966556206,
+   "tB": 32.39999932702631,
+   "tQ": 7.099995855242014,
+   "tRouted": 40.49999552080408,
+   "ratio": 0.9943344405293517,
+   "ratio_ci": [
+    0.970684053755816,
+    1.0174419932739693
+   ],
+   "ratio_of_medians": 0.970059869803926,
+   "ratio_full": 1.2108261694858757,
+   "ratio_full_ci": [
+    1.1841359387995083,
+    1.2266666356225824
+   ],
+   "ratio_routed": 1.22222201086543,
+   "ratio_routed_of_medians": 1.2125747283333852,
+   "ratio_span": [
+    0.8857144460823435,
+    1.3894736035904938
+   ],
+   "build_R": {
+    "compact": "alloc"
+   },
+   "build_B": {
+    "compact": "alloc",
+    "gather": "fast",
+    "mask": "fast"
+   },
+   "builds": [
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 36.70000296551734,
+     "tB": 37.30000025825575,
+     "ratio": 1.016348698753571
+    },
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 34.99999729683623,
+     "tB": 31.000003218650818,
+     "ratio": 0.8857144460823435
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 34.09999771974981,
+     "tB": 37.999998312443495,
+     "ratio": 1.114369526495156
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 33.700001949910074,
+     "tB": 38.09999907389283,
+     "ratio": 1.130563705323302
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 28.800001018680632,
+     "tB": 34.09999771974981,
+     "ratio": 1.184027656722353
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 28.19999644998461,
+     "tB": 36.80000372696668,
+     "ratio": 1.3049648354472314
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 30.899995181243867,
+     "tB": 35.1999988197349,
+     "ratio": 1.1391587155036553
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 18.999999156221747,
+     "tB": 26.399997295811772,
+     "ratio": 1.3894736035904938
+    }
+   ],
+   "kappa_eff": 0.04186250593383036,
+   "pred_band": false,
+   "meas_band": true,
+   "agree": false,
+   "drift": 1.1468971689914813,
+   "ref_us": 3129.400000034366,
+   "contaminated": true,
+   "flip_count": 3,
+   "same": true
+  },
+  {
+   "tag": "p5",
+   "n": 197,
+   "k": 36,
+   "dens": 0.18274111675126903,
+   "tR": 17.099999240599573,
+   "tB": 17.300000763498247,
+   "tQ": 3.7999998312443495,
+   "tRouted": 20.899999071843922,
+   "ratio": 1.0118344061421118,
+   "ratio_ci": [
+    0.9943506494307282,
+    1.0176471947756909
+   ],
+   "ratio_of_medians": 1.0116959960105625,
+   "ratio_full": 1.2366864007226015,
+   "ratio_full_ci": [
+    1.2114285785560421,
+    1.241176616610927
+   ],
+   "ratio_routed": 1.23076929700463,
+   "ratio_routed_of_medians": 1.2222222222222223,
+   "ratio_span": [
+    1.0235291650367093,
+    1.1785710109464156
+   ],
+   "build_R": {
+    "compact": "alloc"
+   },
+   "build_B": {
+    "compact": "alloc",
+    "gather": "fast",
+    "mask": "fast"
+   },
+   "builds": [
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 18.09999957913533,
+     "tB": 18.600003386382014,
+     "ratio": 1.0276245203797165
+    },
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 17.99999881768599,
+     "tB": 19.500002963468432,
+     "ratio": 1.0833335691282715
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 17.899998056236655,
+     "tB": 19.79999797185883,
+     "ratio": 1.1061452582091305
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 17.899998056236655,
+     "tB": 20.499996026046574,
+     "ratio": 1.1452512990024621
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 16.999998479150236,
+     "tB": 17.39999424898997,
+     "ratio": 1.0235291650367093
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 16.800004232209176,
+     "tB": 18.499995348975062,
+     "ratio": 1.1011899219350578
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 16.999998479150236,
+     "tB": 18.600003386382014,
+     "ratio": 1.0941179441394724
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 16.800004232209176,
+     "tB": 19.79999797185883,
+     "ratio": 1.1785710109464156
+    }
+   ],
+   "kappa_eff": 0.18062848669153095,
+   "pred_band": false,
+   "meas_band": false,
+   "agree": true,
+   "drift": 1.0160298872271294,
+   "ref_us": 2944.499996374361,
+   "contaminated": false,
+   "flip_count": 14,
+   "same": true
+  },
+  {
+   "tag": "p5",
+   "n": 197,
+   "k": 79,
+   "dens": 0.4010152284263959,
+   "tR": 17.799997294787318,
+   "tB": 18.000006093643606,
+   "tQ": 3.7999998312443495,
+   "tRouted": 21.599997126031667,
+   "ratio": 1.011236451081645,
+   "ratio_ci": [
+    1.0056180211599595,
+    1.0220996163037732
+   ],
+   "ratio_of_medians": 1.011236451081645,
+   "ratio_full": 1.2247196201132025,
+   "ratio_full_ci": [
+    1.2191011901915172,
+    1.2329547216222083
+   ],
+   "ratio_routed": 1.2247196201132025,
+   "ratio_routed_of_medians": 1.2134831690315577,
+   "ratio_span": [
+    1.0112995186359022,
+    1.1657759129188345
+   ],
+   "build_R": {
+    "compact": "alloc"
+   },
+   "build_B": {
+    "compact": "alloc",
+    "gather": "fast",
+    "mask": "fast"
+   },
+   "builds": [
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 18.800004909280688,
+     "tB": 19.700004486367106,
+     "ratio": 1.0478723054291401
+    },
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 18.799997633323073,
+     "tB": 20.499996026046574,
+     "ratio": 1.0904254578048589
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 18.600003386382014,
+     "tB": 20.8000055863522,
+     "ratio": 1.1182796666360242
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 18.699996871873736,
+     "tB": 21.800005924887955,
+     "ratio": 1.1657759129188345
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 17.700003809295595,
+     "tB": 17.90000533219427,
+     "ratio": 1.0112995186359022
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 17.499995010439306,
+     "tB": 19.20000067912042,
+     "ratio": 1.0971432087647457
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 17.600003047846258,
+     "tB": 19.400002202019095,
+     "ratio": 1.1022726615034937
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 17.50000228639692,
+     "tB": 20.300001779105514,
+     "ratio": 1.1599999501077258
+    }
+   ],
+   "kappa_eff": 0.39655930914818155,
+   "pred_band": false,
+   "meas_band": false,
+   "agree": true,
+   "drift": 1.025317841015176,
+   "ref_us": 2745.0999987195246,
+   "contaminated": false,
+   "flip_count": 28,
+   "same": true
+  },
+  {
+   "tag": "q1",
+   "n": 6969,
+   "k": 293,
+   "dens": 0.04204333476825944,
+   "tR": 24.000000848900527,
+   "tB": 21.30000211764127,
+   "tQ": 4.0000013541430235,
+   "tRouted": 25.300003471784294,
+   "ratio": 0.8828452099387754,
+   "ratio_ci": [
+    0.8786613451697064,
+    0.8884295147688396
+   ],
+   "ratio_of_medians": 0.8875000568434168,
+   "ratio_full": 1.0500000757912225,
+   "ratio_full_ci": [
+    1.04583307437999,
+    1.053942013942666
+   ],
+   "ratio_routed": 1.0497926050311583,
+   "ratio_routed_of_medians": 1.054166774037565,
+   "ratio_span": [
+    0.8870293422016804,
+    1.0604837455691472
+   ],
+   "build_R": {
+    "compact": "alloc"
+   },
+   "build_B": {
+    "compact": "alloc",
+    "gather": "fast",
+    "mask": "fast"
+   },
+   "builds": [
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 25.40000423323363,
+     "tB": 23.40000355616212,
+     "ratio": 0.921259828986379
+    },
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 24.79999966453761,
+     "tB": 25.000001187436283,
+     "ratio": 1.008064577645324
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 24.900000425986946,
+     "tB": 25.199995434377342,
+     "ratio": 1.0120479920987193
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 24.79999966453761,
+     "tB": 26.299996534362435,
+     "ratio": 1.0604837455691472
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 23.90000008745119,
+     "tB": 21.200001356191933,
+     "ratio": 0.8870293422016804
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 23.699998564552516,
+     "tB": 22.700005501974374,
+     "ratio": 0.9578061973356485
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 23.799999326001853,
+     "tB": 23.100001271814108,
+     "ratio": 0.9705883162180182
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 23.699998564552516,
+     "tB": 24.39999661874026,
+     "ratio": 1.0295357846660258
+    }
+   ],
+   "kappa_eff": 0.04737276853569511,
+   "pred_band": true,
+   "meas_band": true,
+   "agree": true,
+   "drift": 0.8255024008302446,
+   "ref_us": 3518.0999984731898,
+   "contaminated": true,
+   "flip_count": 120,
+   "same": true
+  },
+  {
+   "tag": "q1",
+   "n": 6969,
+   "k": 1275,
+   "dens": 0.1829530779164873,
+   "tR": 69.19999577803537,
+   "tB": 66.4000035612844,
+   "tQ": 7.90000194683671,
+   "tRouted": 74.3000055081211,
+   "ratio": 0.9473684849587549,
+   "ratio_ci": [
+    0.9162437438759142,
+    0.9735375046728774
+   ],
+   "ratio_of_medians": 0.9595376822603836,
+   "ratio_full": 1.0835653853719003,
+   "ratio_full_ci": [
+    1.0487805812061353,
+    1.1153845923205068
+   ],
+   "ratio_routed": 1.062947239830365,
+   "ratio_routed_of_medians": 1.0736995670699812,
+   "ratio_span": [
+    0.6571018618413601,
+    1.5880894563614074
+   ],
+   "build_R": {
+    "compact": "alloc"
+   },
+   "build_B": {
+    "compact": "alloc",
+    "gather": "fast",
+    "mask": "fast"
+   },
+   "builds": [
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 41.69999738223851,
+     "tB": 42.49999619787559,
+     "ratio": 1.019184625080524
+    },
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 40.30000127386302,
+     "tB": 50.300004659220576,
+     "ratio": 1.248139033976735
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 69.69999958528206,
+     "tB": 45.79999949783087,
+     "ratio": 0.6571018618413601
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 40.30000127386302,
+     "tB": 64.00000711437315,
+     "ratio": 1.5880894563614074
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 41.1000000895001,
+     "tB": 37.19999949680641,
+     "ratio": 0.9051094748369592
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 39.70000398112461,
+     "tB": 42.30000195093453,
+     "ratio": 1.0654911261733397
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 62.30000144569203,
+     "tB": 80.99999831756577,
+     "ratio": 1.300160456467643
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 81.19999984046444,
+     "tB": 84.39999510301277,
+     "ratio": 1.0394088087295004
+    }
+   ],
+   "kappa_eff": 0.19066794488519156,
+   "pred_band": true,
+   "meas_band": true,
+   "agree": true,
+   "drift": 1.4653881838101228,
+   "ref_us": 3019.199997652322,
+   "contaminated": true,
+   "flip_count": 529,
+   "same": true
+  },
+  {
+   "tag": "q1",
+   "n": 6969,
+   "k": 2795,
+   "dens": 0.4010618453149663,
+   "tR": 56.899996707215905,
+   "tB": 57.29999975301325,
+   "tQ": 4.499997885432094,
+   "tRouted": 61.399994592648,
+   "ratio": 1.0070299309129243,
+   "ratio_ci": [
+    0.9767855393472064,
+    1.0512367520691808
+   ],
+   "ratio_of_medians": 1.0070299309129243,
+   "ratio_full": 1.0861160143196993,
+   "ratio_full_ci": [
+    1.0571426381217013,
+    1.125786212448592
+   ],
+   "ratio_routed": 1.0826010488632372,
+   "ratio_routed_of_medians": 1.0790860834067748,
+   "ratio_span": [
+    0.9203389905755381,
+    1.255425842137465
+   ],
+   "build_R": {
+    "compact": "alloc"
+   },
+   "build_B": {
+    "compact": "alloc",
+    "gather": "fast",
+    "mask": "fast"
+   },
+   "builds": [
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 59.89999772282317,
+     "tB": 66.59999780822545,
+     "ratio": 1.1118530941587905
+    },
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 59.99999848427251,
+     "tB": 69.30000381544232,
+     "ratio": 1.1550000927684618
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 59.89999772282317,
+     "tB": 75.20000508520752,
+     "ratio": 1.255425842137465
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 60.30000076862052,
+     "tB": 73.80000170087442,
+     "ratio": 1.2238806096214705
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 58.999998145736754,
+     "tB": 54.299998737405986,
+     "ratio": 0.9203389905755381
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 56.99999746866524,
+     "tB": 57.89999704575166,
+     "ratio": 1.0157894669658745
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 56.899996707215905,
+     "tB": 59.4000011915341,
+     "ratio": 1.0439368124603274
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 57.09999823011458,
+     "tB": 62.80000525293872,
+     "ratio": 1.0998249947373544
+    }
+   ],
+   "kappa_eff": 0.3982620903346767,
+   "pred_band": false,
+   "meas_band": false,
+   "agree": true,
+   "drift": 0.926957121827825,
+   "ref_us": 3491.099996608682,
+   "contaminated": false,
+   "flip_count": 1154,
+   "same": true
+  },
+  {
+   "tag": "median",
+   "n": 44606,
+   "k": 1873,
+   "dens": 0.0419898668340582,
+   "tR": 62.50000296859071,
+   "tB": 48.00000169780105,
+   "tQ": 4.599998646881431,
+   "tRouted": 52.600000344682485,
+   "ratio": 0.7712000149011605,
+   "ratio_ci": [
+    0.7299508664462842,
+    0.7881620612041824
+   ],
+   "ratio_of_medians": 0.7679999906867747,
+   "ratio_full": 0.8447999897554521,
+   "ratio_full_ci": [
+    0.8052372605245358,
+    0.8575998537823627
+   ],
+   "ratio_routed": 0.8447999897554521,
+   "ratio_routed_of_medians": 0.8415999655410664,
+   "ratio_span": [
+    0.625180898621801,
+    0.9299673695826113
+   ],
+   "build_R": {
+    "compact": "fast"
+   },
+   "build_B": {
+    "compact": "alloc",
+    "gather": "fast",
+    "mask": "fast"
+   },
+   "builds": [
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 68.80000000819564,
+     "tB": 50.70000042906031,
+     "ratio": 0.7369186107997208
+    },
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 64.30000212276354,
+     "tB": 53.499999921768904,
+     "ratio": 0.8320372963538175
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 62.59999645408243,
+     "tB": 54.39999949885532,
+     "ratio": 0.8690096258832559
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 61.400001868605614,
+     "tB": 57.09999823011458,
+     "ratio": 0.9299673695826113
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 69.10000229254365,
+     "tB": 43.20000152802095,
+     "ratio": 0.625180898621801
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 67.20000237692147,
+     "tB": 45.599997974932194,
+     "ratio": 0.6785713744348411
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 64.40000288421288,
+     "tB": 46.89999332185835,
+     "ratio": 0.7282607332515428
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 62.70000449148938,
+     "tB": 49.500005843583494,
+     "ratio": 0.7894737208559914
+    }
+   ],
+   "kappa_eff": 0.054674306436526474,
+   "pred_band": true,
+   "meas_band": true,
+   "agree": true,
+   "drift": 0.9878003277118019,
+   "ref_us": 2680.4000008269213,
+   "contaminated": false,
+   "flip_count": 747,
+   "same": true
+  },
+  {
+   "tag": "median",
+   "n": 44606,
+   "k": 8163,
+   "dens": 0.1830022866878895,
+   "tR": 150.69999790284783,
+   "tB": 142.40000018617138,
+   "tQ": 4.999994416721165,
+   "tRouted": 147.39999460289255,
+   "ratio": 0.9525102079369051,
+   "ratio_ci": [
+    0.9146758106335864,
+    0.994663068327986
+   ],
+   "ratio_of_medians": 0.9449237038342414,
+   "ratio_full": 0.9864314738785461,
+   "ratio_full_ci": [
+    0.9488054665140553,
+    1.0280186000456264
+   ],
+   "ratio_routed": 0.9850746607559957,
+   "ratio_routed_of_medians": 0.9781021675787767,
+   "ratio_span": [
+    0.6417221904398915,
+    1.1535298393808644
+   ],
+   "build_R": {
+    "compact": "fast"
+   },
+   "build_B": {
+    "compact": "alloc",
+    "gather": "fast",
+    "mask": "fast"
+   },
+   "builds": [
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 145.49999468727037,
+     "tB": 154.90000077988952,
+     "ratio": 1.064604855229191
+    },
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 147.5000026402995,
+     "tB": 165.70000298088416,
+     "ratio": 1.1233898306088037
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 147.40000187885016,
+     "tB": 164.89999688928947,
+     "ratio": 1.1187245236592518
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 145.89999773306772,
+     "tB": 168.30000095069408,
+     "ratio": 1.1535298393808644
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 195.1000012923032,
+     "tB": 125.20000018412247,
+     "ratio": 0.6417221904398915
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 192.3000017995946,
+     "tB": 132.19999527791515,
+     "ratio": 0.687467467710621
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 192.79999833088368,
+     "tB": 131.90000026952475,
+     "ratio": 0.6841286380260115
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 193.70000518392771,
+     "tB": 139.19999764766544,
+     "ratio": 0.7186370362535002
+    }
+   ],
+   "kappa_eff": 0.19366884960692213,
+   "pred_band": true,
+   "meas_band": true,
+   "agree": true,
+   "drift": 1.0198517919785446,
+   "ref_us": 2564.000002166722,
+   "contaminated": false,
+   "flip_count": 3345,
+   "same": true
+  },
+  {
+   "tag": "median",
+   "n": 44606,
+   "k": 17887,
+   "dens": 0.40099986548894767,
+   "tR": 255.3000012994744,
+   "tB": 331.3999986858107,
+   "tQ": 5.500005499925464,
+   "tRouted": 260.80000679939985,
+   "ratio": 1.2996078430029812,
+   "ratio_ci": [
+    1.2484277109999868,
+    1.3877394595000547
+   ],
+   "ratio_of_medians": 1.2980806776301923,
+   "ratio_full": 1.3211764921056002,
+   "ratio_full_ci": [
+    1.2700472299464922,
+    1.4088122774229517
+   ],
+   "ratio_routed": 1.3261211858540043,
+   "ratio_routed_of_medians": 1.021543303846183,
+   "ratio_span": [
+    0.7097990032715072,
+    1.358571971322052
+   ],
+   "build_R": {
+    "compact": "fast"
+   },
+   "build_B": {
+    "compact": "fast",
+    "gather": "fast",
+    "mask": "fast"
+   },
+   "builds": [
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 257.49999622348696,
+     "tB": 290.8000024035573,
+     "ratio": 1.12932041424641
+    },
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 255.20000053802505,
+     "tB": 317.7999969921075,
+     "ratio": 1.2452977912308232
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 255.79999783076346,
+     "tB": 320.099999953527,
+     "ratio": 1.2513682668805346
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 254.90000552963465,
+     "tB": 346.3000030023977,
+     "ratio": 1.358571971322052
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 318.4000015608035,
+     "tB": 226.00000374950469,
+     "ratio": 0.7097990032715072
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 314.4000002066605,
+     "tB": 253.99999867659062,
+     "ratio": 0.8078880359721122
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 315.9000043524429,
+     "tB": 255.79999783076346,
+     "ratio": 0.8097499028375221
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 315.40000054519624,
+     "tB": 282.9000004567206,
+     "ratio": 0.89695624593438
+    }
+   ],
+   "kappa_eff": 0.30891752138320305,
+   "pred_band": false,
+   "meas_band": false,
+   "agree": true,
+   "drift": 0.9753095695539209,
+   "ref_us": 2656.9000037852675,
+   "contaminated": false,
+   "flip_count": 7296,
+   "same": true
+  },
+  {
+   "tag": "q3",
+   "n": 412875,
+   "k": 17341,
+   "dens": 0.04200060551014229,
+   "tR": 543.5999992187135,
+   "tB": 365.7000052044168,
+   "tQ": 6.099995516706258,
+   "tRouted": 371.80000072112307,
+   "ratio": 0.6651538121425521,
+   "ratio_ci": [
+    0.6024605884232773,
+    0.7409420324718081
+   ],
+   "ratio_of_medians": 0.672737317384138,
+   "ratio_full": 0.6754076288312018,
+   "ratio_full_ci": [
+    0.6141868388697375,
+    0.7519927490336883
+   ],
+   "ratio_routed": 0.6782652615046326,
+   "ratio_routed_of_medians": 0.6839587955399022,
+   "ratio_span": [
+    0.5396153858800666,
+    0.7217609604455117
+   ],
+   "build_R": {
+    "compact": "fast"
+   },
+   "build_B": {
+    "compact": "fast",
+    "gather": "fast",
+    "mask": "fast"
+   },
+   "builds": [
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 544.8000010801479,
+     "tB": 368.1999951368198,
+     "ratio": 0.675844336282687
+    },
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 533.0999993020669,
+     "tB": 370.90000114403665,
+     "ratio": 0.6957418901324667
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 517.8999999770895,
+     "tB": 373.8000013981946,
+     "ratio": 0.7217609604455117
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 532.9999985406175,
+     "tB": 382.5999956461601,
+     "ratio": 0.7178236335717436
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 519.9999941396527,
+     "tB": 280.59999749530107,
+     "ratio": 0.5396153858800666
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 546.6999937198125,
+     "tB": 314.59999445360154,
+     "ratio": 0.5754527127630373
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 516.7999988771044,
+     "tB": 300.4000027431175,
+     "ratio": 0.5812693564160649
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 532.8000042936765,
+     "tB": 349.9000013107434,
+     "ratio": 0.6567192163870187
+    }
+   ],
+   "kappa_eff": 0.062432400321505634,
+   "pred_band": true,
+   "meas_band": true,
+   "agree": true,
+   "drift": 1.0088248754472442,
+   "ref_us": 2617.60000284994,
+   "contaminated": false,
+   "flip_count": 7151,
+   "same": true
+  },
+  {
+   "tag": "q3",
+   "n": 412875,
+   "k": 75556,
+   "dens": 0.18299969724492884,
+   "tR": 1140.0000003050081,
+   "tB": 1205.1999947289005,
+   "tQ": 8.999995770864189,
+   "tRouted": 1214.1999904997647,
+   "ratio": 0.9740331458324869,
+   "ratio_ci": [
+    0.9136862888906889,
+    1.1873684180562538
+   ],
+   "ratio_of_medians": 1.057192977549516,
+   "ratio_full": 0.9823204347265403,
+   "ratio_full_ci": [
+    0.9200225292416122,
+    1.1952631511864786
+   ],
+   "ratio_routed": 0.979281764365313,
+   "ratio_routed_of_medians": 1.0650877106797405,
+   "ratio_span": [
+    0.5361042370446509,
+    1.2082211438178894
+   ],
+   "build_R": {
+    "compact": "fast"
+   },
+   "build_B": {
+    "compact": "fast",
+    "gather": "fast",
+    "mask": "fast"
+   },
+   "builds": [
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 1123.3999975956976,
+     "tB": 1173.8999965018593,
+     "ratio": 1.0449528209135142
+    },
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 1114.5000025862828,
+     "tB": 1275.4999988828786,
+     "ratio": 1.1444593951753996
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 1123.9000014029443,
+     "tB": 1237.0999975246377,
+     "ratio": 1.1007207011125437
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 1114.2000003019348,
+     "tB": 1346.1999988066964,
+     "ratio": 1.2082211438178894
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 1657.699998759199,
+     "tB": 888.6999930837192,
+     "ratio": 0.5361042370446509
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 1686.4000062923878,
+     "tB": 1018.0000026593916,
+     "ratio": 0.6036527507477315
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 1667.2999990987591,
+     "tB": 1012.9000002052635,
+     "ratio": 0.6075091469758145
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 1677.7999990154058,
+     "tB": 1060.5999996187165,
+     "ratio": 0.6321373228281769
+    }
+   ],
+   "kappa_eff": 0.17309961485849698,
+   "pred_band": true,
+   "meas_band": true,
+   "agree": true,
+   "drift": 1.0507596287700338,
+   "ref_us": 2547.299998695962,
+   "contaminated": false,
+   "flip_count": 31018,
+   "same": true
+  },
+  {
+   "tag": "q3",
+   "n": 412875,
+   "k": 165563,
+   "dens": 0.40100030275507115,
+   "tR": 2305.4999983287416,
+   "tB": 2582.2999959927984,
+   "tQ": 13.299999409355223,
+   "tRouted": 2318.799997738097,
+   "ratio": 1.1316059523032669,
+   "ratio_ci": [
+    1.1143049240333582,
+    1.135608280158727
+   ],
+   "ratio_of_medians": 1.1200607234286313,
+   "ratio_full": 1.1372926289857925,
+   "ratio_full_ci": [
+    1.1198940984309134,
+    1.1415178151253011
+   ],
+   "ratio_routed": 1.137346013588118,
+   "ratio_routed_of_medians": 1.0057688134543468,
+   "ratio_span": [
+    0.6236120070970689,
+    1.4923414518863165
+   ],
+   "build_R": {
+    "compact": "fast"
+   },
+   "build_B": {
+    "compact": "fast",
+    "gather": "fast",
+    "mask": "fast"
+   },
+   "builds": [
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 2306.5999994287267,
+     "tB": 2547.7000017417595,
+     "ratio": 1.1045261434027338
+    },
+    {
+     "compact": "fast",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 2338.7999972328544,
+     "tB": 2982.1999996784143,
+     "ratio": 1.2750983424007172
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 2299.799998581875,
+     "tB": 3101.8000008771196,
+     "ratio": 1.348725977384895
+    },
+    {
+     "compact": "fast",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 2278.5000037401915,
+     "tB": 3400.300003704615,
+     "ratio": 1.4923414518863165
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "fast",
+     "tR": 2791.799997794442,
+     "tB": 1741.0000000381842,
+     "ratio": 0.6236120070970689
+    },
+    {
+     "compact": "alloc",
+     "gather": "fast",
+     "mask": "alloc",
+     "tR": 2761.6999941528775,
+     "tB": 2125.0999998301268,
+     "ratio": 0.7694898085706007
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "fast",
+     "tR": 2805.700001772493,
+     "tB": 2281.799999764189,
+     "ratio": 0.8132729794071598
+    },
+    {
+     "compact": "alloc",
+     "gather": "alloc",
+     "mask": "alloc",
+     "tR": 2766.7999966070056,
+     "tB": 2650.0000021769665,
+     "ratio": 0.9577851689412774
+    }
+   ],
+   "kappa_eff": 0.3580165738939263,
+   "pred_band": false,
+   "meas_band": false,
+   "agree": true,
+   "drift": 0.998145572488011,
+   "ref_us": 2588.3999987854622,
+   "contaminated": false,
+   "flip_count": 68140,
+   "same": true
+  }
+ ],
+ "buffers": {
+  "n_max": 412875,
+  "k_max": 165563
+ },
+ "agree": 11,
+ "delta_complete": true
+}

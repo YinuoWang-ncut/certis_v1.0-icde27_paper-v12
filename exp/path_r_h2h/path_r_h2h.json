@@ -1,0 +1,104 @@
+{
+ "instance": {
+  "rows": 2000000,
+  "groups": 5410,
+  "scope_rows": 436,
+  "scope_code": 4007,
+  "theta": 997.974,
+  "mean_amt": 665.3162,
+  "scope_range": [
+   302,
+   436
+  ],
+  "unit_dtype": "int16"
+ },
+ "design": {
+  "reps_per_point": 30,
+  "runs": 3,
+  "warm_corrections": 450,
+  "cold_corrections": 120,
+  "order": "ABBA per rep (warm)"
+ },
+ "path_r": {
+  "warm": {
+   "p50_us": 9.5,
+   "mean_us": 8.944,
+   "sd_us": 2.662,
+   "min_us": 4.6,
+   "max_us": 39.9,
+   "n": 450
+  },
+  "cold": {
+   "p50_us": 10.5,
+   "mean_us": 9.658,
+   "sd_us": 3.572,
+   "min_us": 5.0,
+   "max_us": 31.1,
+   "n": 120
+  }
+ },
+ "band": {
+  "warm": {
+   "p50_us": 13.7,
+   "mean_us": 14.717,
+   "sd_us": 52.412,
+   "min_us": 4.3,
+   "max_us": 1120.8,
+   "n": 450
+  },
+  "cold": {
+   "p50_us": 15.35,
+   "mean_us": 12.561,
+   "sd_us": 4.763,
+   "min_us": 5.6,
+   "max_us": 21.3,
+   "n": 120
+  }
+ },
+ "per_placement": {
+  "down1.01": {
+   "k": 0,
+   "flips": 0,
+   "band_flips": 0,
+   "p50_us": 4.9,
+   "n": 90
+  },
+  "up1.02": {
+   "k": 2,
+   "flips": 3,
+   "band_flips": 3,
+   "p50_us": 9.2,
+   "n": 90
+  },
+  "up1.10": {
+   "k": 20,
+   "flips": 20,
+   "band_flips": 20,
+   "p50_us": 9.4,
+   "n": 90
+  },
+  "up1.50": {
+   "k": 52,
+   "flips": 52,
+   "band_flips": 52,
+   "p50_us": 10.0,
+   "n": 90
+  },
+  "up2.00": {
+   "k": 69,
+   "flips": 69,
+   "band_flips": 69,
+   "p50_us": 10.0,
+   "n": 90
+  }
+ },
+ "cold_scopes": {
+  "rows_min": 340,
+  "rows_max": 431,
+  "rows_p50": 372
+ },
+ "prediction": {
+  "was_us": 19.7,
+  "warm_over_pred": 0.482
+ }
+}

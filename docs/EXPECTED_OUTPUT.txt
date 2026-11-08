@@ -1,0 +1,227 @@
+$ python reproduce.py --no-data
+captured 2026-11-07, CPython 3.13.14 / numpy 2.5.4 / Windows 11; host CPU not
+characterised, so the elapsed times below are this box and nothing else. Every
+asserted value is host-free.
+------------------------------------------------------------------------
+
+========================================================================
+witnesses and arithmetic -- no corpus needed
+========================================================================
+
+$ python tests\test_theorems.py
+PASS T1  single-rule flip is masked by another disjunct
+PASS T2  |rho| = |band AND support==s*| (300 random instances)
+PASS T3  date correction: the window neighbourhood is the union of both dates
+PASS T4  identical endpoints, identical n and mean, different cardinality
+PASS T5  |rho| monotone in |delta| only at fixed direction
+PASS T6  sup band mass != max single atom mass when the band is wide
+PASS T7  the switch is a floor, not a 5% ratio
+PASS T8  void: SUM/COUNT are decremented, a median is not
+PASS T9  index keyed on the old value misses a value correction in the band
+PASS T10 an MAI/indicator flip moves the verdict with theta fixed
+PASS T11 the union bound covers every window flip (120 random cases)
+
+11 / 11 passed
+
+$ python exp\boundary.py
+{
+  "fits": {
+    "fitted_full_paths": {
+      "c_R_ns": 11.3,
+      "c_B_ns": 25.6,
+      "F_R_ns": 14800.0,
+      "F_B_ns": 19900.0,
+      "kappa_ci": [
+        0.37,
+        0.52
+      ],
+      "kappa_span_runs": [
+        0.2636,
+        0.4639
+      ],
+      "runs": {
+        "n": 7,
+        "corrections_per_run": 3000,
+        "kappa_median": 0.4174,
+        "allowance_rows_at_dp0": [
+          -78.1,
+          0.8
+        ],
+        "allowance_rows_at_measured_dp": [
+          -257,
+          -193
+        ],
+        "source": "exp/run_duel_big.py + exp/kappa_runs.json"
+      },
+      "source": "w12 end-to-end fit, 300 paired corrections, 600 path timings (Table V harness); span from seven re-runs of the same stream (exp/run_duel_big.py)"
+    },
+    "microbenchmark": {
+      "c_R_ns": 0.3279,
+      "c_B_ns": 4.7102,
+      "F_R_ns": -1582.5,
+      "F_B_ns": 2923.9,
+      "source": "exp/cost_model.py (re-read)"
+    }
+  },
+  "accountings": {
+    "fitted_full_paths": {
+      "kappa": 0.44140625,
+      "n_0_rows": 451.32743362831854,
+      "kappa_ci_90_bootstrap": [
+        0.37,
+        0.52
+      ],
+      "kappa_span_runs": [
+        0.2636,
+        0.4639
+      ],
+      "conditional_rows": {
+        "k_over_n=0.21": 860.9047940580688,
+        "k_over_n=0.10": 583.5240274599541
+      }
+    },
+    "microbenchmark": {
+      "kappa": 0.06961487834911469,
+      "n_0_rows": 13743.214394632509,
+      "kappa_ci_90_bootstrap": null,
+      "kappa_span_runs": null,
+      "conditional_rows": {}
+    }
+  }
+}
+
+--no-data: skipping the corpus-dependent steps
+
+========================================================================
+Table VI, the probe rows, and the decision line -- no corpus needed
+========================================================================
+
+$ python exp\n0_holdout\analyze.py
+corpus point computed from duel_repeat\duel_rep.json: n=394, k=99; the paper reads k=182 (does not reproduce)
+
+Table A -- kappa depends on the range it is fitted on (instance F)
+
+backend   kappa[512,64k] kappa[512,16k] k*[512,64k] k*[512,16k] k* measured
+numpy          0.030      0.047       -126       -119          0
+pyloop         0.439      0.442        174        174        298
+sqlite         0.122      0.123         37         38         87
+java c2        1.638      0.420        649        169        128
+java c1        1.723      0.483        679        191        256
+java int       0.578      0.635        228        251        338
+
+Table B -- published versus corrected (instance F, fit [512,64k]/[8,4k]); verdicts read against k=99, the computed corpus band
+backend      k old    k new   k* old   k* new verdict old verdict new
+numpy        0.335    0.030       44     -126       scan       scan
+pyloop       0.420    0.439      166      174       band       band
+sqlite       0.090    0.122       38       37       scan       scan
+java c2      0.147    1.638       67      649       scan       band
+java c1      0.668    1.723      262      679       band       band
+java int     0.820    0.578      323      228       band       band
+
+Table C -- transfer: kappa refitted on each instance, same ranges
+
+backend             F fit    H1 replicate     H2 L2 group  H3 large group
+numpy               0.030           0.031           0.044           0.030
+pyloop              0.439           0.434           0.464           0.301
+sqlite              0.122           0.070           0.138           0.114
+java c2             1.638           1.549           0.356           1.207
+java c1             1.723           1.738           0.457           1.559
+java int            0.578           0.556           0.719           0.654
+
+Table D -- corpus point (n=394, k=182) measured directly
+  k=182 is a point on the holdout grid, not the computed band (99 is off-grid, between 64 and 128); read this panel as 'what the measured curves do at the value the paper quotes'.
+backend               F fit      H1 replicate       H2 L2 group    H3 large group
+numpy        scan 3900/6000    scan 3900/5900    scan 3800/6000    scan 3900/6100
+pyloop     band 17000/10200  band 22600/13800  band 16400/10100  band 15800/10200
+sqlite     scan 46600/73600  scan 69900/73800  scan 67400/73800  scan 44400/72700
+java c2        scan 200/200      scan 200/200      scan 200/300      scan 200/300
+java c1        band 300/200      scan 300/500      band 400/200      band 300/200
+java int    band 12200/6500    band 9800/6500   band 10300/6700    band 9700/6600
+
+Table E -- holdout error and misrouting cost
+
+backend   instance         MAPE_R   MAPE_B    agree   regret    pairs
+numpy     F fit             16.1%     6.0%    94.6%    1.011       56
+pyloop    F fit              1.9%    54.4%    89.3%    1.407       56
+sqlite    F fit              1.8%    41.1%    92.9%    1.038       56
+java c2   F fit            321.5%    27.6%    87.5%    1.236       56
+java c1   F fit            296.7%    43.5%    87.5%    1.258       56
+java int  F fit              6.0%    18.0%    94.6%    1.002       56
+numpy     H1 replicate      10.9%    13.2%    96.4%    1.001       56
+pyloop    H1 replicate       4.4%    39.8%    92.9%    1.421       56
+sqlite    H1 replicate      20.9%    54.2%    94.6%    1.006       56
+java c2   H1 replicate     391.8%    34.3%    82.1%    1.291       56
+java c1   H1 replicate     303.1%    32.7%    85.7%    1.303       56
+java int  H1 replicate       9.2%    14.2%    98.2%    1.216       56
+numpy     H2 L2 group        9.7%     4.8%   100.0%    1.000       35
+pyloop    H2 L2 group        5.0%    26.0%    94.3%    1.005       35
+sqlite    H2 L2 group       18.7%    28.7%    97.1%    1.009       35
+java c2   H2 L2 group       38.5%    30.8%    97.1%    1.004       35
+java c1   H2 L2 group       25.2%    39.0%    97.1%    1.003       35
+java int  H2 L2 group       11.8%     5.8%    97.1%    1.000       35
+numpy     H3 large group     9.3%     5.3%   100.0%    1.000       56
+pyloop    H3 large group     2.0%    59.5%    92.9%    1.025       56
+sqlite    H3 large group     0.3%    41.5%    92.9%    1.052       56
+java c2   H3 large group   294.2%    29.4%    89.3%    1.067       56
+java c1   H3 large group   229.4%    43.0%    89.3%    1.272       56
+java int  H3 large group     6.5%    13.7%    96.4%    1.186       56
+
+wrote n0_holdout_summary.json
+
+$ python exp\n0_robust\probe_rows.py
+numpy            kappa 0.329  shift   349.6 (was  1063.0)  k*_probe   -73.8  win False
+pyloop           kappa 0.541  shift     3.6 (was     6.7)  k*_probe   211.2  win True
+sqlite           kappa 0.157  shift     0.0 (was     0.0)  k*_probe    63.8  win False
+java c2          kappa 0.149  shift    59.8 (was   399.8)  k*_probe    58.4  win False
+java c1          kappa 0.945  shift    26.2 (was    27.7)  k*_probe   346.6  win True
+java int         kappa 0.813  shift    39.4 (was    48.5)  k*_probe   288.3  win True
+-> D:\期刊\2026-11-06-21-54-20\release\certis\exp\n0_robust\probe_rows.json
+
+$ python exp\n0_impl\dline.py
+array   kappa 0.329 Dp  438.4  k+Dp  620.4 vs kappa n  129.7  wins=False  a_d>20.2 ns (2.3x a_p), actual 0.00
+CERTIS  kappa 0.441 Dp  316.3  k+Dp  498.3 vs kappa n  173.9  wins=False  a_d>49.0 ns (3.1x a_p), actual 9.85
+wrote D:\期刊\2026-11-06-21-54-20\release\certis\exp\n0_impl\dline.json
+
+========================================================================
+assert: deterministic values
+========================================================================
+exp/boundary.json        ok
+exp/cheap.json           ok
+exp/degree.json          ok
+exp/delta.json           ok
+exp/n0_holdout/n0_holdout_summary.json ok
+exp/n0_impl/dline.json   ok
+exp/n0_robust/probe_rows.json ok
+exp/regime_bc.json       ok
+
+========================================================================
+record: host-dependent, printed not asserted
+========================================================================
+  value                                      recorded     this host
+  accountings.microbenchmark.kappa           0.0696       0.06961487834911469
+  accountings.microbenchmark.n_0_rows        13743.2      13743.214394632509
+  components_ns.a_gather                     0.466        0.466
+  components_ns.a_random_fetch               4.492        4.492
+  derived.kappa                              0.0696       0.0696
+  derived.n0_rows                            13742.5      13742.5
+  v7_ratio                                   0.094        0.094
+  B_ms                                       0.59         0.59
+  R_ms                                       4.126        4.126
+  delta_equals_band.consistent               True         True
+  full_ms                                    18.282       18.282
+  rows[0].c_B                                7.547        7.547
+  rows[0].kappa                              0.034        0.034
+  rows[1].kappa                              0.0333       0.0333
+  rows[2].N                                  16777216     16777216
+  rows[2].c_B                                10.052       10.052
+  rows[2].kappa                              0.027        0.027
+  16m.c_B.median                             9.477        9.476984814910182
+  16m.kappa.median                           0.0276       0.027570255864646877
+  16m.reps                                   50           50
+  1m.kappa.median                            0.0337       0.03368480100106291
+  4m.kappa.median                            0.0311       0.031129577146911506
+  fetch_over_scan                            17.21        17.21
+  rank_probe_ns_per_group                    3851.2       3851.2
+  scan_ns_per_row                            0.2794       0.2794
+
+all assertions hold

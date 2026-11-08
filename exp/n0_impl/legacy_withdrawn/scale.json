@@ -1,0 +1,37 @@
+{
+ "note": "numpy backend, scope 65536, same predicate, 16x table. Rows 1-2 are one run each. Row 3 is NOT one run: it is the median of 50 process-fresh repetitions (scale_16m.py, raw runs in scale_16m_runs/), because a single run at this size lands anywhere in kappa 0.10-0.42 as the gather's fitted slope moves. The one run this file used to record (kappa 0.1826, c_B 16.256, F_R 7358) is a draw from that slow tail, not a property of the size.",
+ "rows": [
+  {
+   "N": 1048576,
+   "bytes_per_col": 9437184,
+   "c_R": 2.923,
+   "c_B": 9.083,
+   "F_R": 4022.0,
+   "F_B": 4698.1,
+   "kappa": 0.3218,
+   "n0": 231.3
+  },
+  {
+   "N": 4194304,
+   "bytes_per_col": 37748736,
+   "c_R": 2.864,
+   "c_B": 8.533,
+   "F_R": 3976.7,
+   "F_B": 4669.4,
+   "kappa": 0.3357,
+   "n0": 241.8
+  },
+  {
+   "N": 16777216,
+   "bytes_per_col": 150994944,
+   "c_R": 2.898,
+   "c_B": 9.161,
+   "F_R": 3987.2,
+   "F_B": 4621.9,
+   "kappa": 0.3155,
+   "n0": 218.8,
+   "reps": 50,
+   "source": "exp/n0_impl/scale_16m_runs.json"
+  }
+ ]
+}

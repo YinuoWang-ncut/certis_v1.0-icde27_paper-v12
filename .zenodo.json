@@ -1,0 +1,31 @@
+{
+  "title": "certis: artifact for When Does Band Retrieval Pay? Scope, Density, and a Measured Floor for Retroactive Rule Evaluation",
+  "description": "<p>Scripts, stored runs and an assertion file behind every number in the paper. <code>reproduce.py</code> re-derives the host-free values and compares them against <code>expected.json</code>, exiting non-zero on any mismatch; timings are printed and not asserted. The corpus-dependent steps download 27 published CMS release files and verify each by SHA-256.</p><p>The CMS tables themselves are not redistributed: the PTP and MUE quarterly files carry CPT content that is American Medical Association property.</p>",
+  "upload_type": "software",
+  "license": "MIT",
+  "access_right": "open",
+  "version": "v1.0-icde27",
+  "publication_date": "2026-11-06",
+  "creators": [
+    {
+      "name": "Wang, Yinuo",
+      "orcid": "0009-0002-2268-1663",
+      "affiliation": "Brunel London School, North China University of Technology"
+    }
+  ],
+  "keywords": [
+    "temporal databases",
+    "incremental view maintenance",
+    "rule engines",
+    "retroactive correction",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "is supplement to",
+      "identifier": "__PAPER_DOI__",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "Companion artifact for an ICDE 2028 submission. The related identifier is filled in after the paper has a DOI."
+}

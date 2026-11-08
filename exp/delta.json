@@ -1,0 +1,90 @@
+{
+  "delta_counts": {
+    "2026Q3 practitioner": {
+      "additions": 2199,
+      "deletions": 708,
+      "ccmichgs": 2
+    },
+    "2026Q3 hospital": {
+      "additions": 2177,
+      "deletions": 704,
+      "ccmichgs": 2
+    },
+    "2026Q4 practitioner": {
+      "additions": 4249,
+      "deletions": 14,
+      "ccmichgs": 7
+    },
+    "2026Q4 hospital": {
+      "additions": 4146,
+      "deletions": 14,
+      "ccmichgs": 7
+    }
+  },
+  "reconstruction": {
+    "practitioner": {
+      "additions_published": 4249,
+      "additions_also_in_q3": 0,
+      "reconstructed_new_pairs": 4249,
+      "published_not_reconstructed": 0,
+      "disappeared_pairs": 0,
+      "pairs_q3": 2325598,
+      "pairs_q4": 2329847,
+      "deletions_published": 14,
+      "deletions_present_in_q4_with_end_date": 14,
+      "ccmichgs": {
+        "rows": 7,
+        "flipped": 5,
+        "unchanged": 2,
+        "not_found_in_q3": 0,
+        "unchanged_values": [
+          "1"
+        ],
+        "false_positive_rate": 0.2857
+      }
+    },
+    "hospital": {
+      "additions_published": 4146,
+      "additions_also_in_q3": 0,
+      "reconstructed_new_pairs": 4146,
+      "published_not_reconstructed": 0,
+      "disappeared_pairs": 0,
+      "pairs_q3": 1784151,
+      "pairs_q4": 1788297,
+      "deletions_published": 14,
+      "deletions_present_in_q4_with_end_date": 14,
+      "ccmichgs": {
+        "rows": 7,
+        "flipped": 5,
+        "unchanged": 2,
+        "not_found_in_q3": 0,
+        "unchanged_values": [
+          "1"
+        ],
+        "false_positive_rate": 0.2857
+      }
+    }
+  },
+  "clustering": {
+    "q3_removals": 708,
+    "q3_top_column_two": "0029U",
+    "q3_top_count": 155,
+    "q3_top_share": 0.2189,
+    "q3_distinct_column_two": 381,
+    "q4_removals": 14,
+    "q4_top_column_two": "20704",
+    "q4_top_count": 11,
+    "q4_distinct_column_two": 2
+  },
+  "mue_delta": {
+    "revisions": 31,
+    "additions": 51,
+    "deletions": 1,
+    "reconstructed_moved": 31,
+    "reconstructed_increases": 31,
+    "reconstructed_decreases": 0,
+    "revision_codes_matched_by_file": 31,
+    "file_states_direction": false,
+    "note": "the Revisions file carries the new threshold only; the sign of every move above comes from the two full tables"
+  }
+}

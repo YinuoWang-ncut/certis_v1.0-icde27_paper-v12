@@ -1,0 +1,28 @@
+{
+ "instance": {
+  "rows": 2000000,
+  "groups": 5410,
+  "scope_rows": 436,
+  "band_rows": 0,
+  "theta": 997.974
+ },
+ "full_ms": 18.282,
+ "R_ms": 4.126,
+ "B_ms": 0.59,
+ "param_update_ms": 0.4788,
+ "tier_aggregate_ms": 3.9,
+ "tier_aggregate_maintained_ms": 0.0,
+ "relative_band_rows": 5,
+ "relative_band_ms": 0.605,
+ "delta_equals_band": {
+  "before": 91,
+  "after": 91,
+  "band": 0,
+  "consistent": true
+ },
+ "ratios": {
+  "R_over_full": 0.23,
+  "B_over_R": 0.14,
+  "B_over_full": 0.03
+ }
+}

@@ -1,0 +1,154 @@
+{
+ "2026Q3 practitioner": {
+  "rows": 2633389,
+  "pairs": 2325598,
+  "column_one_codes": 13072,
+  "all_codes": 13308,
+  "degree_all": {
+   "codes": 13308,
+   "mean": 349.5,
+   "p50": 276,
+   "p75": 324,
+   "p90": 393,
+   "p99": 6589,
+   "max": 11046
+  },
+  "degree_column_one": {
+   "codes": 13072,
+   "mean": 177.91,
+   "p50": 224,
+   "p75": 295,
+   "p90": 326,
+   "p99": 464,
+   "max": 1225
+  },
+  "rules_mentioning_either_code": {
+   "p50": 6596,
+   "mean": 5590.3,
+   "p90": 7902,
+   "p99": 11942,
+   "max": 20350
+  },
+  "rows_with_deletion_date": 904804,
+  "rows_deletion_date_past": 904804,
+  "modifier_indicator": {
+   "1": 1784036,
+   "0": 750382,
+   "9": 98971
+  }
+ },
+ "2026Q3 hospital": {
+  "rows": 1864729,
+  "pairs": 1784151,
+  "column_one_codes": 12140,
+  "all_codes": 12628,
+  "degree_all": {
+   "codes": 12628,
+   "mean": 282.57,
+   "p50": 215,
+   "p75": 262,
+   "p90": 341,
+   "p99": 6147,
+   "max": 7693
+  },
+  "degree_column_one": {
+   "codes": 12140,
+   "mean": 146.96,
+   "p50": 196,
+   "p75": 231,
+   "p90": 265,
+   "p99": 366,
+   "max": 1150
+  },
+  "rules_mentioning_either_code": {
+   "p50": 6374,
+   "mean": 4930.4,
+   "p90": 7054,
+   "p99": 7975,
+   "max": 15342
+  },
+  "rows_with_deletion_date": 462162,
+  "rows_deletion_date_past": 462162,
+  "modifier_indicator": {
+   "1": 1770016,
+   "9": 30002,
+   "0": 64711
+  }
+ },
+ "2026Q4 practitioner": {
+  "rows": 2637645,
+  "pairs": 2329847,
+  "column_one_codes": 13114,
+  "all_codes": 13347,
+  "degree_all": {
+   "codes": 13347,
+   "mean": 349.12,
+   "p50": 276,
+   "p75": 324,
+   "p90": 394,
+   "p99": 6590,
+   "max": 11084
+  },
+  "degree_column_one": {
+   "codes": 13114,
+   "mean": 177.66,
+   "p50": 222,
+   "p75": 295,
+   "p90": 326,
+   "p99": 464,
+   "max": 1225
+  },
+  "rules_mentioning_either_code": {
+   "p50": 6602,
+   "mean": 5592.3,
+   "p90": 7911,
+   "p99": 11949,
+   "max": 20426
+  },
+  "rows_with_deletion_date": 904825,
+  "rows_deletion_date_past": 904825,
+  "modifier_indicator": {
+   "1": 1786748,
+   "0": 751926,
+   "9": 98971
+  }
+ },
+ "2026Q4 hospital": {
+  "rows": 1868882,
+  "pairs": 1788297,
+  "column_one_codes": 12182,
+  "all_codes": 12668,
+  "degree_all": {
+   "codes": 12668,
+   "mean": 282.33,
+   "p50": 215,
+   "p75": 262,
+   "p90": 341,
+   "p99": 6156,
+   "max": 7704
+  },
+  "degree_column_one": {
+   "codes": 12182,
+   "mean": 146.8,
+   "p50": 196,
+   "p75": 231,
+   "p90": 265,
+   "p99": 366,
+   "max": 1150
+  },
+  "rules_mentioning_either_code": {
+   "p50": 6382,
+   "mean": 4930.0,
+   "p90": 7064,
+   "p99": 7985,
+   "max": 15364
+  },
+  "rows_with_deletion_date": 462183,
+  "rows_deletion_date_past": 462183,
+  "modifier_indicator": {
+   "1": 1773217,
+   "9": 30002,
+   "0": 65663
+  }
+ }
+}

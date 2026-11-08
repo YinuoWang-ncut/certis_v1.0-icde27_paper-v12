@@ -1,0 +1,97 @@
+W12 -- CERTIS end to end
+real topology: CMS NCCI PTP 2026Q4 practitioner + MUE 2026Q2
+================================================================================================
+  codes=17,741 ptp_pairs=2,329,847 ptp_rows_raw=2,637,645
+------------------------------------------------------------------------------------------------
+A. correctness gate (P5): Delta-completeness on every path
+------------------------------------------------------------------------------------------------
+  n_g=100,000 lines=285,288 corr=600 paths={'R': 561, 'B': 1, 'P': 38} band_share=0.002
+  missed=0 extra=0 flips=11347 -> PASS
+    cap      n= 300 p50=    24.90us p99=    53.70us
+    pair     n= 262 p50=    21.70us p99=    62.80us
+    rel      n=  38 p50=    41.40us p99=    83.10us
+------------------------------------------------------------------------------------------------
+B. P1 flatness and P3 scaling: the |D| axis
+------------------------------------------------------------------------------------------------
+  n_g=  100,000 lines=   285,288 CERTIS    p50=    21.90us p99=    53.40us thr=   39,170/s FULL=    1.69ms missed=0
+  n_g=  100,000 lines=   285,288 R-always  p50=    19.20us p99=    49.40us thr=   43,980/s FULL=    1.69ms missed=0
+  n_g=  100,000 lines=   285,288 B-always  p50=    21.90us p99=    52.90us thr=   38,599/s FULL=    1.69ms missed=0
+  n_g=  350,000 lines=   996,298 CERTIS    p50=    27.00us p99=    81.90us thr=   29,128/s FULL=    7.26ms missed=0
+  n_g=  350,000 lines=   996,298 R-always  p50=    23.60us p99=    73.90us thr=   34,958/s FULL=    7.26ms missed=0
+  n_g=  350,000 lines=   996,298 B-always  p50=    28.70us p99=   106.40us thr=   27,211/s FULL=    7.26ms missed=0
+  n_g=1,000,000 lines= 2,848,615 CERTIS    p50=    40.60us p99=   130.90us thr=   20,253/s FULL=   21.15ms missed=0
+  n_g=1,000,000 lines= 2,848,615 R-always  p50=    36.10us p99=   109.90us thr=   22,888/s FULL=   21.15ms missed=0
+  n_g=1,000,000 lines= 2,848,615 B-always  p50=    39.70us p99=   127.10us thr=   20,361/s FULL=   21.15ms missed=0
+
+  CERTIS    exponent of p50 vs |D| = +0.265  (end-to-end: |scope| grows with |D|, so this is the wrong test for P1 -- see B2)
+  R-always  exponent of p50 vs |D| = +0.271  (end-to-end: |scope| grows with |D|, so this is the wrong test for P1 -- see B2)
+  B-always  exponent of p50 vs |D| = +0.257  (end-to-end: |scope| grows with |D|, so this is the wrong test for P1 -- see B2)
+------------------------------------------------------------------------------------------------
+B2. P1 done properly: band cost at FIXED |B|, varying only |D|
+------------------------------------------------------------------------------------------------
+  k=  64 |D|=   285,288 |B|=    65 t=    3.59us
+  k=  64 |D|=   996,298 |B|=    41 t=    3.62us
+  k=  64 |D|= 2,848,615 |B|=    65 t=    3.64us
+  k=64: exponent of band cost vs |D| = +0.005 <= P1 OK
+  k= 512 |D|=   285,288 |B|=   304 t=    3.63us
+  k= 512 |D|=   996,298 |B|=   513 t=    3.62us
+  k= 512 |D|= 2,848,615 |B|=   513 t=    3.66us
+  k=512: exponent of band cost vs |D| = +0.003 <= P1 OK
+------------------------------------------------------------------------------------------------
+C. P2 tail: does the aggregate refresh own the p99?
+------------------------------------------------------------------------------------------------
+  mixed stream: p50=49.70us p99=4584.70us ratio=92.2x P-share=0.148 missed=0
+    cap      n= 299 p50=    41.20us p99=   175.50us
+    global   n=  28 p50=  3680.40us p99=  9485.20us
+    pair     n= 212 p50=    50.10us p99=   154.20us
+    rel      n=  61 p50=    54.70us p99=   114.50us
+  batch latency p50=0.83ms max=11.89ms
+------------------------------------------------------------------------------------------------
+D. P4 split, and whether the criterion can be checked rather than assumed
+------------------------------------------------------------------------------------------------
+  corpus mix   fraction |B|/|scope|: p10=0.211 median=0.463 p90=1.000 share below C_HAT=0.2%
+               R=  569 B=   1 P=  30 band_share=  0.2% <= P4 OK
+  with tail    fraction |B|/|scope|: p10=0.313 median=0.430 p90=1.000 share below C_HAT=0.0%
+               R=  511 B=   0 P=  89 band_share=  0.0% <= P4 OK
+
+  criterion check: both paths on the same correction, binned by |B|/|scope|
+  corrections=300  identical flip sets: 300/300
+  |B|/|s|            n    tR(us)    tB(us)   tB/tR  winner
+  [0.00,0.01)       3     12.80     18.50    1.45  R
+  [0.01,0.05)     106     14.80     19.60    1.32  R   <- C_HAT
+  [0.05,0.10)      20     15.20     19.70    1.30  R
+  [0.10,0.25)       6     15.10     18.80    1.25  R
+  [0.25,0.50)     165     23.10     24.70    1.07  R
+  measured crossover is at or below |B|/|scope| = None; C_HAT = 0.05
+
+  same corrections binned by |scope|: what path R actually pays for
+  |scope|                n    tR(us)    tB(us)  |B|/|s| winner
+  [0,1000)             219     17.40     20.40    0.286  R
+  [1000,4000)           46     68.90     46.70    0.326  B
+  [4000,10000)          35     71.40     49.10    0.327  B
+  floor: on scopes under 1,000 rows path R already costs 17.4us and path B 20.4us -- neither is bounded by
+         its per-element term at this scale, which is why the per-element criterion does not transfer to end-to-end times
+------------------------------------------------------------------------------------------------
+F. What the criterion should be: route on |scope|, not on |B|/|scope|
+------------------------------------------------------------------------------------------------
+  fitted from the duel:  t_R =  11.34ns*|s| +  14.76us
+                         t_B =  25.56ns*|B| +  19.86us
+  mean |B|/|s| = 0.212
+  predicted switch at |scope| = 862 rows; below it the band's fixed probe is not repaid
+  n_g=  100,000 lines=   285,288 CERTIS2 p50=   20.20us band_share=  0.0% vs R-always    19.20us ( 0.95x) missed=0
+  n_g=  350,000 lines=   996,298 CERTIS2 p50=   26.70us band_share= 12.0% vs R-always    23.60us ( 0.88x) missed=0
+  n_g=1,000,000 lines= 2,848,615 CERTIS2 p50=   38.10us band_share= 15.0% vs R-always    36.10us ( 0.95x) missed=0
+------------------------------------------------------------------------------------------------
+E. P3: absolute vs relative correction size, against FULL
+------------------------------------------------------------------------------------------------
+  capped at the 90th percentile, because at the median the corpus's cap
+  is 1 and +1 and x2 are the same correction -- the arms would not differ
+  abs n_g=  100,000 lines=   285,288 p50=    27.40us FULL=    1.69ms FULL/cert=       62x |B|/|s| med=0.032
+  abs n_g=  350,000 lines=   996,298 p50=    25.70us FULL=    7.26ms FULL/cert=      282x |B|/|s| med=0.021
+  abs n_g=1,000,000 lines= 2,848,615 p50=    25.90us FULL=   21.15ms FULL/cert=      817x |B|/|s| med=0.021
+  abs exponent: FULL/cert=+1.126  cert vs |D|=-0.025  |B|/|s| vs |D|=-0.193
+      -> P3 first half OK
+  rel n_g=  100,000 lines=   285,288 p50=    22.00us FULL=    1.69ms FULL/cert=       77x |B|/|s| med=0.033
+  rel n_g=  350,000 lines=   996,298 p50=    26.60us FULL=    7.26ms FULL/cert=      273x |B|/|s| med=0.027
+  rel n_g=1,000,000 lines= 2,848,615 p50=    26.30us FULL=   21.15ms FULL/cert=      804x |B|/|s| med=0.024
+  rel exponent: FULL/cert=+1.021  cert vs |D|=+0.080  |B|/|s| vs |D|=-0.150

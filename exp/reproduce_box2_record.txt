@@ -1,0 +1,42 @@
+box2-record.txt  |  artifact v1.0-icde28-r5  |  2026-11-07
+reproduce.py --no-data, second machine (box2), tag box2
+========================================================================
+box2 machine fingerprint
+  OS        Windows 11 Home China, build 22631, 64-bit (Windows-11-10.0.22631-SP0)
+  CPU       AMD Ryzen 5 8640U w/ Radeon 760M Graphics
+  cores     6 physical / 12 logical
+  memory    15.27 GB
+  power     AC / mains (battery present, BatteryStatus 2)
+  host      stay
+  python    3.13.14   numpy 2.4.4
+========================================================================
+record: host-dependent, printed not asserted
+========================================================================
+  value                                      recorded     this host
+  accountings.microbenchmark.kappa           0.0696       0.06961487834911469
+  accountings.microbenchmark.n_0_rows        13743.2      13743.214394632509
+  components_ns.a_gather                     0.466        0.466
+  components_ns.a_random_fetch               4.492        4.492
+  derived.kappa                              0.0696       0.0696
+  derived.n0_rows                            13742.5      13742.5
+  v7_ratio                                   0.094        0.094
+  B_ms                                       0.59         0.59
+  R_ms                                       4.126        4.126
+  delta_equals_band.consistent               True         True
+  full_ms                                    18.282       18.282
+  rows[0].c_B                                7.547        7.547
+  rows[0].kappa                              0.034        0.034
+  rows[1].kappa                              0.0333       0.0333
+  rows[2].N                                  16777216     16777216
+  rows[2].c_B                                10.052       10.052
+  rows[2].kappa                              0.027        0.027
+  16m.c_B.median                             9.477        9.476984814910182
+  16m.kappa.median                           0.0276       0.027570255864646877
+  16m.reps                                   50           50
+  1m.kappa.median                            0.0337       0.03368480100106291
+  4m.kappa.median                            0.0311       0.031129577146911506
+  fetch_over_scan                            17.21        17.21
+  rank_probe_ns_per_group                    3851.2       3851.2
+  scan_ns_per_row                            0.2794       0.2794
+
+all assertions hold

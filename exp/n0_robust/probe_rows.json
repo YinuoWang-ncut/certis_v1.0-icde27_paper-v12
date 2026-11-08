@@ -1,0 +1,69 @@
+{
+ "corpus": {
+  "n": 394.0,
+  "k": 182.0
+ },
+ "note": "probe_rows.py -- the rank probe expressed in the units of eq. (6).\n\nn_0 is defined by  k < kappa(n - n_0),  i.e.  (a_p+a_d)k + F_B < (a_s+a_d)n + F_R.\nCharging a probe P on the band side shifts n_0 by P/(a_p+a_d) -- the band's own\nper-candidate cost -- and NOT by P/a_s, which is what n0_eff in n0_robust_fix.json\ndoes.  This script re-expresses every configuration in the correct unit so the\npaper's sentence (\"moves n_0 by ... rows\") is reproducible from the artifact.\n\nSince a_p = a_s/kappa in the bare fits, P/a_p = kappa * (P/a_s) = kappa * (n0_eff - n0).",
+ "rows": [
+  {
+   "backend": "numpy",
+   "kappa": 0.3289,
+   "n0": 268.9,
+   "probe_rows_asj": 1063.0,
+   "probe_rows_correct": 349.6207,
+   "n0_with_probe": 618.5207,
+   "kstar_with_probe": -73.84485823000001,
+   "win_with_probe": false
+  },
+  {
+   "backend": "pyloop",
+   "kappa": 0.5407,
+   "n0": -0.2,
+   "probe_rows_asj": 6.7,
+   "probe_rows_correct": 3.62269,
+   "n0_with_probe": 3.42269,
+   "kstar_with_probe": 211.18515151699998,
+   "win_with_probe": true
+  },
+  {
+   "backend": "sqlite",
+   "kappa": 0.1565,
+   "n0": -13.8,
+   "probe_rows_asj": 0.0,
+   "probe_rows_correct": 0.0,
+   "n0_with_probe": -13.8,
+   "kstar_with_probe": 63.8207,
+   "win_with_probe": false
+  },
+  {
+   "backend": "java c2",
+   "kappa": 0.1495,
+   "n0": -56.7,
+   "probe_rows_asj": 399.8,
+   "probe_rows_correct": 59.7701,
+   "n0_with_probe": 3.0700999999999965,
+   "kstar_with_probe": 58.44402004999999,
+   "win_with_probe": false
+  },
+  {
+   "backend": "java c1",
+   "kappa": 0.9447,
+   "n0": 0.9,
+   "probe_rows_asj": 27.700000000000003,
+   "probe_rows_correct": 26.168190000000003,
+   "n0_with_probe": 27.06819,
+   "kstar_with_probe": 346.640480907,
+   "win_with_probe": true
+  },
+  {
+   "backend": "java int",
+   "kappa": 0.8129,
+   "n0": -0.1,
+   "probe_rows_asj": 48.5,
+   "probe_rows_correct": 39.42565,
+   "n0_with_probe": 39.325649999999996,
+   "kstar_with_probe": 288.31477911499996,
+   "win_with_probe": true
+  }
+ ]
+}

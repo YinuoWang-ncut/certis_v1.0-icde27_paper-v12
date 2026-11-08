@@ -1,0 +1,12 @@
+[package]
+name = "ivm_h2h"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+differential-dataflow = "0.21"
+timely = "0.28"
+
+[profile.release]
+opt-level = 3
+debug = false

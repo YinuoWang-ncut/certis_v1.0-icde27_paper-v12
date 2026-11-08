@@ -1,0 +1,65 @@
+{
+  "fits": {
+    "fitted_full_paths": {
+      "c_R_ns": 11.3,
+      "c_B_ns": 25.6,
+      "F_R_ns": 14800.0,
+      "F_B_ns": 19900.0,
+      "kappa_ci": [
+        0.37,
+        0.52
+      ],
+      "kappa_span_runs": [
+        0.2636,
+        0.4639
+      ],
+      "runs": {
+        "n": 7,
+        "corrections_per_run": 3000,
+        "kappa_median": 0.4174,
+        "allowance_rows_at_dp0": [
+          -78.1,
+          0.8
+        ],
+        "allowance_rows_at_measured_dp": [
+          -257,
+          -193
+        ],
+        "source": "exp/run_duel_big.py + exp/kappa_runs.json"
+      },
+      "source": "w12 end-to-end fit, 300 paired corrections, 600 path timings (Table V harness); span from seven re-runs of the same stream (exp/run_duel_big.py)"
+    },
+    "microbenchmark": {
+      "c_R_ns": 0.3279,
+      "c_B_ns": 4.7102,
+      "F_R_ns": -1582.5,
+      "F_B_ns": 2923.9,
+      "source": "exp/cost_model.py (re-read)"
+    }
+  },
+  "accountings": {
+    "fitted_full_paths": {
+      "kappa": 0.44140625,
+      "n_0_rows": 451.32743362831854,
+      "kappa_ci_90_bootstrap": [
+        0.37,
+        0.52
+      ],
+      "kappa_span_runs": [
+        0.2636,
+        0.4639
+      ],
+      "conditional_rows": {
+        "k_over_n=0.21": 860.9047940580688,
+        "k_over_n=0.10": 583.5240274599541
+      }
+    },
+    "microbenchmark": {
+      "kappa": 0.06961487834911469,
+      "n_0_rows": 13743.214394632509,
+      "kappa_ci_90_bootstrap": null,
+      "kappa_span_runs": null,
+      "conditional_rows": {}
+    }
+  }
+}

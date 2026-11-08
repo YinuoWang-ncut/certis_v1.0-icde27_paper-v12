@@ -1,0 +1,31 @@
+{
+ "note": "50 process-fresh repetitions of the 16.7M cell, protocol identical to scale.py (seed 20261105, same grids, same order, single shot per point, min of five rounds); raw runs in scale_16m_runs/",
+ "N": 16777216,
+ "reps": 50,
+ "kappa": {
+  "min": 0.10161818689957665,
+  "p25": 0.3120777528012869,
+  "median": 0.31550693182558776,
+  "p75": 0.32134714782796436,
+  "max": 0.4248351424421304,
+  "mean": 0.3134052250471791,
+  "sd": 0.04297759821405377,
+  "in_core": 45,
+  "core": [
+   0.3,
+   0.35
+  ]
+ },
+ "c_R": {
+  "median": 2.8975999980399143,
+  "sd": 0.14569614192732663
+ },
+ "c_B": {
+  "median": 9.16093160774594,
+  "min": 8.424666560551389,
+  "max": 28.789877249611944,
+  "sd": 2.9783078531600493
+ },
+ "wall_seconds": 21.4,
+ "superseded": "a single run of scale.py on 2026-11-04 recorded kappa 0.1826 for this size (c_B 16.256 ns, F_R 7358 ns).  It is one draw from the slow tail this sample also contains, not a property of the size: the median does not move, and the paper quotes the median.  A reviewer re-running scale.py once can land anywhere in [min, max]."
+}

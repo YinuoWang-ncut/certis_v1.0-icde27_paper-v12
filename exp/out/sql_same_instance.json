@@ -1,0 +1,112 @@
+{
+ "reps": 15,
+ "instance_rows": 457481,
+ "duckdb": "2.0.0",
+ "sqlite": "3.53.1",
+ "rows": [
+  {
+   "tag": "median",
+   "code": 0,
+   "n": 44606,
+   "k": 8163,
+   "dens": 0.1830022866878895,
+   "duck_plan": {
+    "duck_cl": {
+     "kind": "SEQ",
+     "row_groups": [
+      1,
+      4
+     ],
+     "total_us": 700.0
+    },
+    "duck_in": {
+     "kind": "SEQ",
+     "row_groups": [
+      4,
+      4
+     ],
+     "total_us": 1800.0
+    }
+   },
+   "duck_engine_us": {
+    "duck_cl_cnt": 1234.899999872141,
+    "duck_cl_mat": 983.9999993346282,
+    "duck_in_cnt": 1924.0000001445878,
+    "duck_in_mat": 2947.400000266498
+   },
+   "sqlite_plan": {
+    "R": "SEARCH lit USING INTEGER PRIMARY KEY (rowid>? AND rowid<?)",
+    "B": "SEARCH lit_in USING INDEX si2 (code=? AND unit>? AND unit<?)",
+    "scan": "SCAN lit_in"
+   },
+   "sqlite_us": {
+    "duck_cl_cnt": 1234.899999872141,
+    "duck_cl_mat": 983.9999993346282,
+    "duck_in_cnt": 1924.0000001445878,
+    "duck_in_mat": 2947.400000266498,
+    "R_cnt": 1900.3999996130005,
+    "R_mat": 2388.500000051863,
+    "B_cnt": 280.50000037183054,
+    "B_mat": 3444.899999522022,
+    "scan_cnt": 12719.100000140315,
+    "scan_mat": 13558.9000001346
+   },
+   "sq_ratio_B_over_R": 0.1476005053825257,
+   "sq_ratio_B_over_R_mat": 1.4422859532958847,
+   "sq_ratio_B_over_scan": 0.022053447206857098,
+   "certis_ratio": 1.0299003363015293
+  },
+  {
+   "tag": "q3",
+   "code": 1,
+   "n": 412875,
+   "k": 75556,
+   "dens": 0.18299969724492884,
+   "duck_plan": {
+    "duck_cl": {
+     "kind": "SEQ",
+     "row_groups": [
+      3,
+      4
+     ],
+     "total_us": 1000.0
+    },
+    "duck_in": {
+     "kind": "SEQ",
+     "row_groups": [
+      4,
+      4
+     ],
+     "total_us": 2200.0
+    }
+   },
+   "duck_engine_us": {
+    "duck_cl_cnt": 1526.5000001818407,
+    "duck_cl_mat": 1650.8999997313367,
+    "duck_in_cnt": 2148.5999996002647,
+    "duck_in_mat": 3630.700000030629
+   },
+   "sqlite_plan": {
+    "R": "SEARCH lit USING INTEGER PRIMARY KEY (rowid>? AND rowid<?)",
+    "B": "SEARCH lit_in USING INDEX si2 (code=? AND unit>? AND unit<?)",
+    "scan": "SCAN lit_in"
+   },
+   "sqlite_us": {
+    "duck_cl_cnt": 1526.5000001818407,
+    "duck_cl_mat": 1650.8999997313367,
+    "duck_in_cnt": 2148.5999996002647,
+    "duck_in_mat": 3630.700000030629,
+    "R_cnt": 16375.299999708659,
+    "R_mat": 21541.800000704825,
+    "B_cnt": 2025.9000002624816,
+    "B_mat": 19963.600000664883,
+    "scan_cnt": 20878.70000013936,
+    "scan_mat": 26464.20000019134
+   },
+   "sq_ratio_B_over_R": 0.12371681742004882,
+   "sq_ratio_B_over_R_mat": 0.9267377842154182,
+   "sq_ratio_B_over_scan": 0.09703190333923851,
+   "certis_ratio": 0.9723726480127892
+  }
+ ]
+}

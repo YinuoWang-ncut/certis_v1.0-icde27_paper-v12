@@ -1,0 +1,57 @@
+{
+ "box1": {
+  "R_p50": 9.7,
+  "B_p50": 14.0,
+  "ratio": 1.443,
+  "cold_ratio": 1.4537037037037035,
+  "n": 436,
+  "k": 70,
+  "instance": {
+   "rows": 2000000,
+   "groups": 5410,
+   "seed": 20261105,
+   "scope_rows": 436,
+   "scope_code": 4007,
+   "unit_dtype": "int16"
+  }
+ },
+ "box2": {
+  "n": 436,
+  "k": 70,
+  "runs": 3,
+  "R_p50": [
+   22.9,
+   15.15,
+   16.45
+  ],
+  "B_p50": [
+   31.75,
+   20.8,
+   22.25
+  ],
+  "ratio": [
+   1.386,
+   1.373,
+   1.353
+  ],
+  "ratio_of_medians": 1.35258358662614,
+  "median_ratio": 1.373,
+  "cold_ratio": [
+   1.4044943820224718,
+   1.4960835509138382,
+   1.4289544235924934
+  ],
+  "cold_median": 1.4289544235924934,
+  "level_spread": 1.5115511551155114,
+  "ratio_spread": 1.024390243902439,
+  "claim_paper": {
+   "sent": "the first run is 1.39x the third in absolute level (22.90 vs 16.45 us, the warm-up a first run pays) while its ratio is 1.386 vs 1.353, 2.4% apart",
+   "run1_over_run3_level": 1.3921,
+   "run1_over_run3_ratio": 1.0244,
+   "pct_apart": 2.44,
+   "source": "exp/cross_machine/box2-r1.json vs box2-r3.json, P0.path_R.p50 and P0.ratio_over_R",
+   "warmup_note": "box2-r1's absolute level is flagged as elevated for a first run in exp/cross_machine_box2.txt; the ratio is unaffected"
+  }
+ },
+ "note": "box1 is exp/cross_machine.py on the first host; exp/path_r_h2h/ gives 9.5/13.7 (ratio 1.44) on the same instance shape"
+}

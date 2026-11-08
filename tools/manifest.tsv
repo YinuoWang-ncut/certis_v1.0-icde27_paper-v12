@@ -1,0 +1,64 @@
+# path	status	why
+# status: entry | corpus | provenance | legacy | helper
+# entry/corpus must be reachable from reproduce.py; provenance means a
+# stored run whose numbers expected.json pins; legacy is superseded.
+# prototype/ is excluded: a vendored driver tree, not part of the claim.
+exp/alt600.py	entry	the 600-correction replay under both protocols; asserted, not re-timed
+exp/bigscope.py	provenance	bare paths at five scope sizes; its stored run is what V-D quotes
+exp/bootstrap_kappa.py	legacy	superseded as the paper's error bar; the paired interval replaced it
+exp/bootstrap_kappa_check.py	legacy	delta-method cross-check of the superseded bootstrap
+exp/boundary.py	entry	kappa and n_0 for the two accounts; asserted against boundary.json
+exp/build_triple.py	entry	bare kernels on that same store, under both compactions and gathers
+exp/certificate_reach.py	provenance	how far the emptiness certificate reaches, and the S/B correlation
+exp/cheap.py	corpus	the two cheaper certification structures, and the 13 of 98
+exp/corpus_point.py	provenance	n = 394 and k = 182 computed rather than asserted, from the corpus
+exp/cost_model.py	provenance	one accounting for both paths; superseded in the paper by eq. (11)
+exp/cross_machine.py	provenance	the second box; needs a second machine, so stored not re-run
+exp/degree.py	corpus	degree of the real edit set; needs data/mue and data/cms
+exp/delta.py	corpus	the published delta and the four things it does not determine
+exp/e2e_repro.py	provenance	whether the end-to-end pipeline is runnable today; a one-off probe
+exp/empty_cases.py	corpus	one line per certified-empty move; the slack a reader can recount
+exp/fig_ratio.py	entry	Fig. 2: the ratio against scope, with paired bootstrap intervals
+exp/fig_grid.py	provenance	the two panels of Fig. 1, from the stored records
+exp/fit_kappa_runs.py	provenance	turns the seven duel runs into the recorded kappa interval
+exp/fullpath_band_vs_scan.py	provenance	the six-density full-path comparison at 401 rows; stored
+exp/grid80.py	entry	the 80-cell calibration grid; its stored run is asserted
+exp/grid_calibration.py	legacy	the first 80-cell grid, whose stores grew with the scope; superseded
+exp/grid_fixedD.py	provenance	the 70-cell grid at fixed |D|; supersedes the calibration confound
+exp/ivm.py	provenance	the IVM baseline; needs differential dataflow, so stored
+exp/ivm_h2h/aggregate.py	provenance	folds three harness runs into the table the paper prints
+exp/ivm_h2h/mkdata.py	provenance	dumps the instance for the Rust harness; a build step, not a run
+exp/layout_sensitivity.py	entry	six value/id width pairs, standing in for a third machine
+exp/masked_pipeline.py	entry	the pipeline at the four published scopes under eight builds
+exp/n0_holdout/analyze.py	entry	reduces the six-layout stores to Table VI; reads, does not re-time
+exp/n0_holdout/n0_holdout.py	provenance	out-of-grid holdout for the cost model; needs a JDK, so stored
+exp/n0_impl/dline.py	entry	solves eq. (6) for the decision term on the V-E table
+exp/n0_impl/legacy_withdrawn/scale_16m.py	legacy	withdrawn: one repetition of the 16.7M cell, wrong protocol
+exp/n0_impl/legacy_withdrawn/scale_16m_reps.py	legacy	withdrawn with scale_16m.py; kept so the withdrawal is auditable
+exp/n0_impl/scale.py	provenance	does the boundary move with |D|; stored, three sizes in one process
+exp/n0_impl/scale_reps.py	provenance	fresh-process repetitions of the size sweep; 150 stored runs
+exp/n0_robust/fig_n0.py	provenance	two panels for the robustness section; reads the stored sweep
+exp/n0_robust/fix_boot.py	provenance	re-does one bootstrap with the correct estimator; recorded as a fix
+exp/n0_robust/n0_robust.py	provenance	n_0 across six backends; needs the JVM and sqlite builds, stored
+exp/n0_robust/probe_rows.py	entry	the rank probe re-expressed in the units of eq. (6)
+exp/path_r_h2h/path_r_h2h.py	provenance	path R on the instance Table V uses; needs the Rust harness
+exp/prim_cost.py	entry	the two primitives and their crossover, on a synthetic array
+exp/rank_probe.py	provenance	what it costs to learn k; the source of the rank-probe term
+exp/realband.py	provenance	the band-density ceiling from published aggregates; stored
+exp/regime_bc.py	corpus	regimes (b) and (c) on the real threshold distribution; corpus
+exp/run_duel_big.py	provenance	the duel at larger N, seven runs; stored under exp/duel_big
+exp/run_duel_repeat.py	provenance	the duel re-measured with repeated sweeps; the data behind kappa
+exp/same_store.py	entry	the fixed-|D| grid: 70 cells in one store; its stored run is asserted
+exp/scope_vs_D.py	entry	Sect. V-A's four scopes at five store sizes; the |D| sensitivity
+exp/sigma_selfpay.py	entry	Prop. 4 measured in nesting order: mask, then update, then both
+exp/sql_same_instance.py	entry	DuckDB and SQLite on one instance, to price the candidate list
+exp/store_size.py	entry	one cell held fixed while the store grows; the |D| confound
+exp/synpuf_gate.py	provenance	the DE-SynPUF feasibility gate; it killed that branch, and it is why
+exp/utilization.py	corpus	the CY2024 aggregate behind the emptiness certificate; corpus
+exp/veto_duel_rot.py	provenance	the duel with arm order rotated inside each correction; 9 runs
+tests/test_theorems.py	entry	eleven theorem witnesses; run first, and a failure stops the run
+tools/audit.py	helper	this ledger: three-way consistency, exits non-zero on a regression
+tools/manifest_src.py	helper	the editable source of manifest.tsv; edit ROWS here and re-run it
+tools/push.py	helper	upload helper for the release archive; not part of reproduction
+tools/push_api.py	helper	the same upload over HTTP; not part of reproduction
+tools/set_url.py	helper	fills the artifact URL into README, CITATION and .zenodo.json

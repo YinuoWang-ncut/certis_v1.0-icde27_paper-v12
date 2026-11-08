@@ -1,0 +1,4 @@
+# Everything except data/fetch.py and tests/test_theorems.py, which are stdlib
+# only and run with no dependencies at all.
+numpy>=1.24
+duckdb>=0.9

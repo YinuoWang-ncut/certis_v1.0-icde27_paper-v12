@@ -1,0 +1,41 @@
+name: reproduce (no corpus)
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    # The one thing a reviewer can see without trusting us: a third-party machine
+    # running the same command the README tells them to run.
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install (numpy for the fits, duckdb for the baseline scripts)
+        run: python -m pip install --upgrade pip && python -m pip install -r requirements.txt
+
+      # An empty placeholder is the normal state before a release tag, so it
+      # must not fail the run a reviewer is pointed at.  On a tag it must.
+      - name: No placeholder left in README / CITATION / zenodo (tags only)
+        if: startsWith(github.ref, 'refs/tags/')
+        run: python tools/set_url.py --check
+
+      # Before the numbers: is every script accounted for?  This catches the
+      # failure a reader cannot see -- a script that produces a published number
+      # but is reachable from no entry point.
+      - name: Every script accounted for
+        run: python tools/audit.py
+
+      - name: Assert every host-free number
+        run: python reproduce.py --no-data

@@ -1,0 +1,53 @@
+{
+ "aggregate": {
+  "rows": 3200341,
+  "codes": 270
+ },
+ "population": {
+  "up": 98,
+  "down": 18,
+  "with_aggregate": 63,
+  "certified": 13,
+  "carried": 35,
+  "certified_by_code": {
+   "G0465": 5,
+   "21085": 5,
+   "0562T": 3
+  }
+ },
+ "buckets": [
+  {
+   "lo": 0.0,
+   "hi": 1.05,
+   "codes": 139,
+   "movers": 4,
+   "rate": 0.02877697841726619
+  },
+  {
+   "lo": 1.05,
+   "hi": 2.0,
+   "codes": 66,
+   "movers": 4,
+   "rate": 0.06060606060606061
+  },
+  {
+   "lo": 2.0,
+   "hi": 10.0,
+   "codes": 28,
+   "movers": 2,
+   "rate": 0.07142857142857142
+  },
+  {
+   "lo": 10.0,
+   "hi": null,
+   "codes": 37,
+   "movers": 8,
+   "rate": 0.21621621621621623
+  }
+ ],
+ "not_certified": {
+  "n": 50,
+  "units_median": 35.66960044705225,
+  "units_gt2": 40
+ }
+}
